@@ -530,7 +530,7 @@ pa11y http://localhost:8000 --standard WCAG2AA
 **Ibrahim Benkacem**
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-ibrahimbenkacem.dev-3b82f6?style=for-the-badge&logo=google-chrome&logoColor=white)](https://ibrahimbenkacem.dev)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077b5?style=for-the-badge&logo=linkedin&logoColor=white)](www.linkedin.com/in/ibrahim-benkacem)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077b5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ibrahim-benkacem)
 [![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/BenkacemIbrahim)
 [![Twitter](https://img.shields.io/badge/Twitter-Follow-1da1f2?style=for-the-badge&logo=twitter&logoColor=white)](https://x.com/Benkacem_)
 [![Email](https://img.shields.io/badge/Email-Contact-ea4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ibrahim.benkacem.dev@gmail.com)
