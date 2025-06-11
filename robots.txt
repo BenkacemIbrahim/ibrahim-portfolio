@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://ibrahimbenkacem.dev/sitemap.xml
+
+# Disallow certain files
+Disallow: /js/
+Disallow: /*.js$
+Disallow: /manifest.json
+Disallow: /sw.js
+
+# Allow CSS files
+Allow: /styles.css
+
+# Crawl delay
+Crawl-delay: 1

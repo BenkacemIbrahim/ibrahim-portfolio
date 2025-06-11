@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Get in touch with Ibrahim Benkacem - Full Stack Web Developer. Contact for web development projects, collaborations, and professional inquiries.">
+    <meta name="keywords" content="Ibrahim Benkacem, Contact, Web Developer, Hire Developer, Freelance, Collaboration">
+    <meta name="author" content="Ibrahim Benkacem">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Contact Ibrahim Benkacem - Full Stack Developer">
+    <meta property="og:description"
+        content="Ready to bring your web development project to life? Get in touch for professional consultation and collaboration.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ibrahimbenkacem.dev/contact">
+    <meta property="og:image" content="/images/contact-og.jpg">
+
+    <title>Contact - Ibrahim Benkacem | Get In Touch</title>
+
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap"
+        as="style">
+
+    <!-- CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: { "50": "#eff6ff", "100": "#dbeafe", "200": "#bfdbfe", "300": "#93c5fd", "400": "#60a5fa", "500": "#3b82f6", "600": "#2563eb", "700": "#1d4ed8", "800": "#1e40af", "900": "#1e3a8a", "950": "#172554" }
+                    },
+                    animation: {
+                        'bounce-slow': 'bounce 3s linear infinite',
+                        'gradient': 'gradient 15s ease infinite',
+                        'spin-slow': 'spin 15s linear infinite',
+                        'morphing': 'morphing 10s ease-in-out infinite',
+                        'floating': 'floating 3s ease-in-out infinite',
+                        'glow': 'glow 2s ease-in-out infinite alternate',
+                        'scanning': 'scanning 3s linear infinite',
+                    },
+                    keyframes: {
+                        gradient: {
+                            '0%, 100%': { 'background-size': '200% 200%', 'background-position': 'left center' },
+                            '50%': { 'background-size': '200% 200%', 'background-position': 'right center' }
+                        },
+                        morphing: {
+                            '0%': { 'border-radius': '60% 40% 30% 70%/60% 30% 70% 40%' },
+                            '50%': { 'border-radius': '30% 60% 70% 40%/50% 60% 30% 60%' },
+                            '100%': { 'border-radius': '60% 40% 30% 70%/60% 30% 70% 40%' }
+                        },
+                        floating: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' }
+                        },
+                        glow: {
+                            '0%': { boxShadow: '0 0 5px #3b82f6, 0 0 10px #3b82f6, 0 0 15px #3b82f6, 0 0 20px #3b82f6' },
+                            '100%': { boxShadow: '0 0 10px #3b82f6, 0 0 20px #3b82f6, 0 0 30px #3b82f6, 0 0 40px #3b82f6' }
+                        },
+                        scanning: {
+                            '0%': { transform: 'translateY(-100%)' },
+                            '100%': { transform: 'translateY(1000%)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-gray-900 text-white transition-all duration-300">
+    <!-- Skip to main content -->
+    <a href="#main-content"
+        class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-primary-600 text-white px-4 py-2 rounded-md z-50">
+        Skip to main content
+    </a>
+
+    <!-- Background Elements -->
+    <div id="vanta-bg" class="fixed inset-0 -z-10" aria-hidden="true"></div>
+    <div id="particles-js" class="fixed inset-0 -z-10" aria-hidden="true"></div>
+    <canvas id="star-trail-canvas" aria-hidden="true"></canvas>
+
+    <!-- Header -->
+    <header class="fixed w-full z-50 transition-colors duration-300" id="main-header" role="banner">
+        <nav class="container mx-auto px-8 py-6" role="navigation" aria-label="Main navigation">
+            <div class="flex justify-between items-center">
+                <a href="index.html"
+                    class="text-3xl font-bold glitch relative focus:outline-none focus:ring-2 focus:ring-primary-500 rounded"
+                    data-text="IB.dev" aria-label="Ibrahim Benkacem - Home">
+                    <span class="relative z-10">IB.dev</span>
+                    <span class="absolute top-0 left-0 -z-10 blur-sm text-blue-400 animate-pulse"
+                        aria-hidden="true">IB.dev</span>
+                </a>
+
+                <div class="hidden md:flex space-x-8" role="menubar">
+                    <a href="index.html"
+                        class="nav-link hover:text-primary-400 transition-colors duration-300 relative group focus:outline-none focus:ring-2 focus:ring-primary-500 rounded px-2 py-1"
+                        role="menuitem">
+                        <span class="relative z-10">Home</span>
+                        <span
+                            class="absolute inset-x-0 bottom-0 h-0.5 bg-primary-400 transform scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"
+                            aria-hidden="true"></span>
+                    </a>
+                    <a href="about.html"
+                        class="nav-link hover:text-primary-400 transition-colors duration-300 relative group focus:outline-none focus:ring-2 focus:ring-primary-500 rounded px-2 py-1"
+                        role="menuitem">
+                        <span class="relative z-10">About</span>
+                        <span
+                            class="absolute inset-x-0 bottom-0 h-0.5 bg-primary-400 transform scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"
+                            aria-hidden="true"></span>
+                    </a>
+                    <a href="projects.html"
+                        class="nav-link hover:text-primary-400 transition-colors duration-300 relative group focus:outline-none focus:ring-2 focus:ring-primary-500 rounded px-2 py-1"
+                        role="menuitem">
+                        <span class="relative z-10">Projects</span>
+                        <span
+                            class="absolute inset-x-0 bottom-0 h-0.5 bg-primary-400 transform scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"
+                            aria-hidden="true"></span>
+                    </a>
+                    <a href="skills.html"
+                        class="nav-link hover:text-primary-400 transition-colors duration-300 relative group focus:outline-none focus:ring-2 focus:ring-primary-500 rounded px-2 py-1"
+                        role="menuitem">
+                        <span class="relative z-10">Skills</span>
+                        <span
+                            class="absolute inset-x-0 bottom-0 h-0.5 bg-primary-400 transform scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"
+                            aria-hidden="true"></span>
+                    </a>
+                    <a href="contact.html"
+                        class="nav-link hover:text-primary-400 transition-colors duration-300 relative group focus:outline-none focus:ring-2 focus:ring-primary-500 rounded px-2 py-1"
+                        role="menuitem" aria-current="page">
+                        <span class="relative z-10 text-primary-400">Contact</span>
+                        <span
+                            class="absolute inset-x-0 bottom-0 h-0.5 bg-primary-400 transform scale-x-100 origin-left transition-transform duration-300"
+                            aria-hidden="true"></span>
+                    </a>
+                </div>
+
+                <div class="flex items-center space-x-4">
+                    <button id="mobileMenuButton"
+                        class="md:hidden relative focus:outline-none focus:ring-2 focus:ring-primary-500 rounded p-2"
+                        aria-label="Toggle mobile menu" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu"
+            class="hidden md:hidden bg-gray-900 bg-opacity-95 backdrop-filter backdrop-blur-lg absolute w-full py-4 transition-all duration-300"
+            role="menu">
+            <a href="index.html"
+                class="block py-2 px-4 hover:bg-gray-800 transition-colors duration-300 focus:outline-none focus:bg-gray-700"
+                role="menuitem">Home</a>
+            <a href="about.html"
+                class="block py-2 px-4 hover:bg-gray-800 transition-colors duration-300 focus:outline-none focus:bg-gray-700"
+                role="menuitem">About</a>
+            <a href="projects.html"
+                class="block py-2 px-4 hover:bg-gray-800 transition-colors duration-300 focus:outline-none focus:bg-gray-700"
+                role="menuitem">Projects</a>
+            <a href="skills.html"
+                class="block py-2 px-4 hover:bg-gray-800 transition-colors duration-300 focus:outline-none focus:bg-gray-700"
+                role="menuitem">Skills</a>
+            <a href="contact.html"
+                class="block py-2 px-4 hover:bg-gray-800 transition-colors duration-300 focus:outline-none focus:bg-gray-700"
+                role="menuitem">Contact</a>
+
+            <div class="md:hidden px-4 py-2 border-t border-gray-700 mt-2">
+                <div class="flex justify-between items-center">
+                    <div class="bg-black bg-opacity-50 text-white p-2 rounded">
+                        FPS: <span id="fps-value-mobile">60</span>
+                    </div>
+                    <div class="bg-black bg-opacity-50 text-white p-2 rounded">
+                        Time: <span id="time-value-mobile">00:00:00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-20" id="main-content" role="main">
+        <div id="holographic-container" class="fixed inset-0 pointer-events-none" aria-hidden="true"></div>
+        <canvas id="threejs-canvas" class="fixed inset-0 -z-10" aria-hidden="true"></canvas>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20">
+            <div class="container mx-auto px-8 max-w-7xl">
+                <h1 class="text-4xl md:text-6xl font-bold mb-12 text-center glitch" data-text="Contact">Contact</h1>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <!-- Contact Form -->
+                    <div class="max-w-2xl mx-auto lg:mx-0 glassmorphism p-10 rounded-2xl relative overflow-hidden"
+                        data-aos="fade-up">
+                        <!-- Animated border effect -->
+                        <div class="absolute inset-0 border-2 border-primary-500 rounded-2xl animate-pulse"
+                            aria-hidden="true"></div>
+
+                        <!-- Scanning line effect -->
+                        <div class="absolute w-full h-2 bg-primary-500/30 top-0 left-0 animate-scanning"
+                            aria-hidden="true"></div>
+
+                        <form class="relative z-10 space-y-8" id="contactForm" novalidate>
+                            <!-- Name Input -->
+                            <div class="form-group relative">
+                                <div class="relative">
+                                    <input type="text" id="name" name="name" required
+                                        class="w-full bg-gray-800/50 border-2 border-primary-500/30 rounded-lg pl-12 pr-6 py-4 outline-none transition-all duration-300 focus:border-primary-500 focus:shadow-glow peer"
+                                        placeholder=" " aria-describedby="name-error">
+                                    <div class="absolute left-4 top-1/2 transform -translate-y-1/2 text-primary-500 transition-opacity duration-300 peer-focus:opacity-100 opacity-50 pointer-events-none"
+                                        aria-hidden="true">
+                                        <i class="fas fa-user-circle"></i>
+                                    </div>
+                                    <label for="name"
+                                        class="absolute left-0 -top-7 text-primary-400 text-sm font-semibold transition-all duration-300 opacity-0 peer-focus:opacity-100 peer-valid:opacity-100">
+                                        IDENTIFICATION
+                                    </label>
+                                </div>
+                                <div id="name-error" class="text-red-400 text-sm mt-1 hidden" role="alert"></div>
+                            </div>
+
+                            <!-- Email Input -->
+                            <div class="form-group relative">
+                                <div class="relative">
+                                    <input type="email" id="email" name="email" required
+                                        class="w-full bg-gray-800/50 border-2 border-primary-500/30 rounded-lg pl-12 pr-6 py-4 outline-none transition-all duration-300 focus:border-primary-500 focus:shadow-glow peer"
+                                        placeholder=" " aria-describedby="email-error">
+                                    <div class="absolute left-4 top-1/2 transform -translate-y-1/2 text-primary-500 transition-opacity duration-300 peer-focus:opacity-100 opacity-50 pointer-events-none"
+                                        aria-hidden="true">
+                                        <i class="fas fa-satellite-dish"></i>
+                                    </div>
+                                    <label for="email"
+                                        class="absolute left-0 -top-7 text-primary-400 text-sm font-semibold transition-all duration-300 opacity-0 peer-focus:opacity-100 peer-valid:opacity-100">
+                                        COMMUNICATION CHANNEL
+                                    </label>
+                                </div>
+                                <div id="email-error" class="text-red-400 text-sm mt-1 hidden" role="alert"></div>
+                            </div>
+
+                            <!-- Subject Input -->
+                            <div class="form-group relative">
+                                <div class="relative">
+                                    <input type="text" id="subject" name="subject" required
+                                        class="w-full bg-gray-800/50 border-2 border-primary-500/30 rounded-lg pl-12 pr-6 py-4 outline-none transition-all duration-300 focus:border-primary-500 focus:shadow-glow peer"
+                                        placeholder=" " aria-describedby="subject-error">
+                                    <div class="absolute left-4 top-1/2 transform -translate-y-1/2 text-primary-500 transition-opacity duration-300 peer-focus:opacity-100 opacity-50 pointer-events-none"
+                                        aria-hidden="true">
+                                        <i class="fas fa-tag"></i>
+                                    </div>
+                                    <label for="subject"
+                                        class="absolute left-0 -top-7 text-primary-400 text-sm font-semibold transition-all duration-300 opacity-0 peer-focus:opacity-100 peer-valid:opacity-100">
+                                        TRANSMISSION SUBJECT
+                                    </label>
+                                </div>
+                                <div id="subject-error" class="text-red-400 text-sm mt-1 hidden" role="alert"></div>
+                            </div>
+
+                            <!-- Message Input -->
+                            <div class="form-group relative">
+                                <div class="relative">
+                                    <textarea id="message" name="message" required rows="4"
+                                        class="w-full bg-gray-800/50 border-2 border-primary-500/30 rounded-lg pl-12 pr-6 py-4 outline-none transition-all duration-300 focus:border-primary-500 focus:shadow-glow peer resize-vertical"
+                                        placeholder=" " aria-describedby="message-error"></textarea>
+                                    <div class="absolute left-4 top-4 text-primary-500 transition-opacity duration-300 peer-focus:opacity-100 opacity-50 pointer-events-none"
+                                        aria-hidden="true">
+                                        <i class="fas fa-message"></i>
+                                    </div>
+                                    <label for="message"
+                                        class="absolute left-0 -top-7 text-primary-400 text-sm font-semibold transition-all duration-300 opacity-0 peer-focus:opacity-100 peer-valid:opacity-100">
+                                        TRANSMISSION CONTENT
+                                    </label>
+                                </div>
+                                <div id="message-error" class="text-red-400 text-sm mt-1 hidden" role="alert"></div>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <button type="submit" id="submitBtn"
+                                class="w-full relative overflow-hidden group bg-primary-600/20 border-2 border-primary-500 text-white py-4 px-6 rounded-lg transition-all duration-300
+                                hover:bg-primary-600/40 hover:shadow-glow focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:ring-offset-gray-900 disabled:opacity-50 disabled:cursor-not-allowed">
+                                <span class="relative z-10 flex items-center justify-center gap-2" id="submitText">
+                                    <i class="fas fa-paper-plane animate-bounce" aria-hidden="true"></i>
+                                    INITIATE TRANSMISSION
+                                </span>
+                                <div class="absolute inset-0 w-full h-full bg-gradient-to-r from-primary-600 to-primary-400 opacity-0 group-hover:opacity-20 transition-opacity duration-300"
+                                    aria-hidden="true"></div>
+                            </button>
+
+                            <!-- Success/Error Messages -->
+                            <div id="form-message" class="hidden p-4 rounded-lg" role="alert" aria-live="polite"></div>
+                        </form>
+
+                        <!-- Decorative Elements -->
+                        <div class="absolute -top-10 -right-10 w-40 h-40 bg-primary-500/10 rounded-full blur-xl"
+                            aria-hidden="true"></div>
+                        <div class="absolute -bottom-10 -left-10 w-40 h-40 bg-primary-500/10 rounded-full blur-xl"
+                            aria-hidden="true"></div>
+                    </div>
+
+                    <!-- Contact Information -->
+                    <div class="space-y-8" data-aos="fade-up" data-aos-delay="200">
+                        <div class="glassmorphism p-8 rounded-xl">
+                            <h2 class="text-3xl font-bold mb-6 text-primary-400">Let's Connect</h2>
+                            <p class="text-lg text-gray-300 mb-8">
+                                Ready to bring your ideas to life? I'm always excited to work on new projects and
+                                collaborate with amazing people. Whether you need a complete web application, a stunning
+                                frontend, or technical consultation, I'm here to help.
+                            </p>
+
+                            <div class="space-y-6">
+                                <div class="flex items-center space-x-4">
+                                    <div
+                                        class="w-12 h-12 bg-primary-500/20 rounded-full flex items-center justify-center">
+                                        <i class="fas fa-envelope text-primary-400" aria-hidden="true"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-semibold text-primary-300">Email</h3>
+                                        <a href="mailto:ibrahim@benkacem.dev"
+                                            class="text-gray-300 hover:text-primary-400 transition-colors duration-300">
+                                            ibrahim@benkacem.dev
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-center space-x-4">
+                                    <div
+                                        class="w-12 h-12 bg-primary-500/20 rounded-full flex items-center justify-center">
+                                        <i class="fas fa-phone text-primary-400" aria-hidden="true"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-semibold text-primary-300">Phone</h3>
+                                        <a href="tel:+1234567890"
+                                            class="text-gray-300 hover:text-primary-400 transition-colors duration-300">
+                                            +1 (234) 567-890
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-center space-x-4">
+                                    <div
+                                        class="w-12 h-12 bg-primary-500/20 rounded-full flex items-center justify-center">
+                                        <i class="fas fa-map-marker-alt text-primary-400" aria-hidden="true"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-semibold text-primary-300">Location</h3>
+                                        <p class="text-gray-300">Available Worldwide (Remote)</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-center space-x-4">
+                                    <div
+                                        class="w-12 h-12 bg-primary-500/20 rounded-full flex items-center justify-center">
+                                        <i class="fas fa-clock text-primary-400" aria-hidden="true"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-semibold text-primary-300">Response Time</h3>
+                                        <p class="text-gray-300">Usually within 24 hours</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Services Overview -->
+                        <div class="glassmorphism p-8 rounded-xl">
+                            <h3 class="text-2xl font-bold mb-6 text-primary-400">Services I Offer</h3>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div class="flex items-center space-x-3">
+                                    <i class="fas fa-code text-primary-400" aria-hidden="true"></i>
+                                    <span class="text-gray-300">Full-Stack Development</span>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <i class="fas fa-mobile-alt text-primary-400" aria-hidden="true"></i>
+                                    <span class="text-gray-300">Responsive Design</span>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <i class="fas fa-palette text-primary-400" aria-hidden="true"></i>
+                                    <span class="text-gray-300">UI/UX Design</span>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <i class="fas fa-rocket text-primary-400" aria-hidden="true"></i>
+                                    <span class="text-gray-300">Performance Optimization</span>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <i class="fas fa-cloud text-primary-400" aria-hidden="true"></i>
+                                    <span class="text-gray-300">Cloud Deployment</span>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <i class="fas fa-users text-primary-400" aria-hidden="true"></i>
+                                    <span class="text-gray-300">Technical Consultation</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social Media Section -->
+                <section id="social-media" class="py-16">
+                    <div class="container mx-auto px-4">
+                        <h2 class="text-3xl font-bold text-center mb-10 glitch" data-text="NEURAL NETWORKS">
+                            NEURAL NETWORKS
+                        </h2>
+
+                        <div class="flex justify-center gap-8 flex-wrap">
+                            <!-- GitHub -->
+                            <a href="https://github.com/ibrahimbenkacem" class="social-link group relative"
+                                target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+                                <div class="social-icon-wrapper">
+                                    <i class="fab fa-github text-3xl" aria-hidden="true"></i>
+                                    <span class="social-tooltip">GitHub</span>
+                                    <div class="social-ping" aria-hidden="true"></div>
+                                </div>
+                            </a>
+
+                            <!-- LinkedIn -->
+                            <a href="https://linkedin.com/in/ibrahimbenkacem" class="social-link group relative"
+                                target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                                <div class="social-icon-wrapper">
+                                    <i class="fab fa-linkedin text-3xl" aria-hidden="true"></i>
+                                    <span class="social-tooltip">LinkedIn</span>
+                                    <div class="social-ping" aria-hidden="true"></div>
+                                </div>
+                            </a>
+
+                            <!-- Twitter -->
+                            <a href="https://twitter.com/ibrahimbenkacem" class="social-link group relative"
+                                target="_blank" rel="noopener noreferrer" aria-label="Twitter Profile">
+                                <div class="social-icon-wrapper">
+                                    <i class="fab fa-twitter text-3xl" aria-hidden="true"></i>
+                                    <span class="social-tooltip">Twitter</span>
+                                    <div class="social-ping" aria-hidden="true"></div>
+                                </div>
+                            </a>
+
+                            <!-- Instagram -->
+                            <a href="https://instagram.com/ibrahimbenkacem" class="social-link group relative"
+                                target="_blank" rel="noopener noreferrer" aria-label="Instagram Profile">
+                                <div class="social-icon-wrapper">
+                                    <i class="fab fa-instagram text-3xl" aria-hidden="true"></i>
+                                    <span class="social-tooltip">Instagram</span>
+                                    <div class="social-ping" aria-hidden="true"></div>
+                                </div>
+                            </a>
+
+                            <!-- Discord -->
+                            <a href="https://discord.gg/ibrahimbenkacem" class="social-link group relative"
+                                target="_blank" rel="noopener noreferrer" aria-label="Discord Server">
+                                <div class="social-icon-wrapper">
+                                    <i class="fab fa-discord text-3xl" aria-hidden="true"></i>
+                                    <span class="social-tooltip">Discord</span>
+                                    <div class="social-ping" aria-hidden="true"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-12 relative overflow-hidden" role="contentinfo">
+        <div class="container mx-auto px-8 max-w-7xl relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center md:text-left">
+                    <h3 class="text-2xl font-bold mb-4 text-primary-400 glitch" data-text="IB.dev">IB.dev</h3>
+                    <p class="text-gray-400">&copy; 2024 Ibrahim Benkacem. All rights reserved.</p>
+                </div>
+                <div class="text-center">
+                    <h4 class="text-xl font-semibold mb-4 text-primary-300">Quick Links</h4>
+                    <nav aria-label="Footer navigation">
+                        <ul class="space-y-2">
+                            <li><a href="index.html"
+                                    class="text-gray-400 hover:text-primary-400 transition-colors duration-300 focus:outline-none focus:text-primary-400">Home</a>
+                            </li>
+                            <li><a href="about.html"
+                                    class="text-gray-400 hover:text-primary-400 transition-colors duration-300 focus:outline-none focus:text-primary-400">About</a>
+                            </li>
+                            <li><a href="projects.html"
+                                    class="text-gray-400 hover:text-primary-400 transition-colors duration-300 focus:outline-none focus:text-primary-400">Projects</a>
+                            </li>
+                            <li><a href="skills.html"
+                                    class="text-gray-400 hover:text-primary-400 transition-colors duration-300 focus:outline-none focus:text-primary-400">Skills</a>
+                            </li>
+                            <li><a href="contact.html"
+                                    class="text-gray-400 hover:text-primary-400 transition-colors duration-300 focus:outline-none focus:text-primary-400">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="text-center md:text-right">
+                    <h4 class="text-xl font-semibold mb-4 text-primary-300">Connect</h4>
+                    <div class="flex justify-center md:justify-end space-x-4">
+                        <a href="https://twitter.com/ibrahimbenkacem"
+                            class="text-gray-400 hover:text-primary-400 transition-colors duration-300 transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-primary-500 rounded p-1"
+                            aria-label="Twitter">
+                            <i class="fab fa-twitter text-2xl"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/ibrahimbenkacem"
+                            class="text-gray-400 hover:text-primary-400 transition-colors duration-300 transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-primary-500 rounded p-1"
+                            aria-label="LinkedIn">
+                            <i class="fab fa-linkedin text-2xl"></i>
+                        </a>
+                        <a href="https://github.com/ibrahimbenkacem"
+                            class="text-gray-400 hover:text-primary-400 transition-colors duration-300 transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-primary-500 rounded p-1"
+                            aria-label="GitHub">
+                            <i class="fab fa-github text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Loading Screen -->
+    <div id="loading-container" class="fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-75 z-50">
+        <div class="holographic-loader" aria-label="Loading"></div>
+    </div>
+
+    <!-- HUD Container -->
+    <div id="hud-container" class="fixed top-0 left-0 w-full h-full pointer-events-none md:block" aria-hidden="true">
+        <div id="fps-counter"
+            class="absolute top-4 left-4 bg-black bg-opacity-50 text-white p-2 rounded hidden md:block">
+            FPS: <span id="fps-value">60</span>
+        </div>
+        <div id="time-display"
+            class="absolute top-4 right-4 bg-black bg-opacity-50 text-white p-2 rounded hidden md:block">
+            Time: <span id="time-value">00:00:00</span>
+        </div>
+    </div>
+
+    <!-- Scripts - Load in correct order -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.21/vanta.net.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <!-- Custom Scripts -->
+    <script src="js/performance.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/contact-form.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

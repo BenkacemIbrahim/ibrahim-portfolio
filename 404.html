@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | Ibrahim Benkacem</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body class="bg-gray-900 text-white min-h-screen flex items-center justify-center">
+    <div class="text-center">
+        <div class="mb-8">
+            <h1 class="text-9xl font-bold text-primary-400 glitch" data-text="404">404</h1>
+        </div>
+        <h2 class="text-4xl font-bold mb-4">Page Not Found</h2>
+        <p class="text-xl text-gray-300 mb-8">The page you're looking for doesn't exist in this dimension.</p>
+        <div class="space-x-4">
+            <a href="index.html" class="bg-primary-600 text-white px-8 py-3 rounded-full hover:bg-primary-700 transition-all duration-300 inline-block">
+                <i class="fas fa-home mr-2"></i>
+                Return Home
+            </a>
+            <a href="contact.html" class="bg-gray-800 text-white px-8 py-3 rounded-full hover:bg-gray-700 transition-all duration-300 inline-block">
+                <i class="fas fa-envelope mr-2"></i>
+                Contact Me
+            </a>
+        </div>
+    </div>
+    
+    <!-- Background Effects -->
+    <div id="particles-js" class="fixed inset-0 -z-10"></div>
+    
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Initialize particles for 404 page
+        particlesJS("particles-js", {
+            particles: {
+                number: { value: 50 },
+                color: { value: "#3b82f6" },
+                shape: { type: "circle" },
+                opacity: { value: 0.5 },
+                size: { value: 3 },
+                line_linked: { enable: true, distance: 150, color: "#3b82f6", opacity: 0.4, width: 1 },
+                move: { enable: true, speed: 2 }
+            }
+        });
+    </script>
+</body>
+</html>

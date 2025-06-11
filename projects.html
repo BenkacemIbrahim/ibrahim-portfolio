@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore Ibrahim Benkacem's portfolio of web development projects including full-stack applications, frontend designs, and innovative solutions.">
+    <meta name="keywords"
+        content="Ibrahim Benkacem, Projects, Portfolio, Web Development, Full Stack, Frontend, Backend, React, Node.js">
+    <meta name="author" content="Ibrahim Benkacem">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Projects - Ibrahim Benkacem | Full Stack Developer">
+    <meta property="og:description"
+        content="Discover innovative web development projects and solutions created by Ibrahim Benkacem.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ibrahimbenkacem.dev/projects">
+    <meta property="og:image" content="/images/projects-og.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.json">
+
+    <title>Projects - Ibrahim Benkacem | Full Stack Developer Portfolio</title>
+
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap"
+        as="style">
+    <link rel="preload" href="styles.css" as="style">
+
+    <!-- CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: { "50": "#eff6ff", "100": "#dbeafe", "200": "#bfdbfe", "300": "#93c5fd", "400": "#60a5fa", "500": "#3b82f6", "600": "#2563eb", "700": "#1d4ed8", "800": "#1e40af", "900": "#1e3a8a", "950": "#172554" }
+                    },
+                    animation: {
+                        'bounce-slow': 'bounce 3s linear infinite',
+                        'gradient': 'gradient 15s ease infinite',
+                        'spin-slow': 'spin 15s linear infinite',
+                        'morphing': 'morphing 10s ease-in-out infinite',
+                        'floating': 'floating 3s ease-in-out infinite',
+                        'glow': 'glow 2s ease-in-out infinite alternate',
+                    },
+                    keyframes: {
+                        gradient: {
+                            '0%, 100%': { 'background-size': '200% 200%', 'background-position': 'left center' },
+                            '50%': { 'background-size': '200% 200%', 'background-position': 'right center' }
+                        },
+                        morphing: {
+                            '0%': { 'border-radius': '60% 40% 30% 70%/60% 30% 70% 40%' },
+                            '50%': { 'border-radius': '30% 60% 70% 40%/50% 60% 30% 60%' },
+                            '100%': { 'border-radius': '60% 40% 30% 70%/60% 30% 70% 40%' }
+                        },
+                        floating: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' }
+                        },
+                        glow: {
+                            '0%': { boxShadow: '0 0 5px #3b82f6, 0 0 10px #3b82f6, 0 0 15px #3b82f6, 0 0 20px #3b82f6' },
+                            '100%': { boxShadow: '0 0 10px #3b82f6, 0 0 20px #3b82f6, 0 0 30px #3b82f6, 0 0 40px #3b82f6' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-gray-900 text-white transition-all duration-300">
+    <!-- Skip to main content -->
+    <a href="#main-content"
+        class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-primary-600 text-white px-4 py-2 rounded-md z-50">
+        Skip to main content
+    </a>
+
+    <!-- Background Elements -->
+    <div id="vanta-bg" class="fixed inset-0 -z-10" aria-hidden="true"></div>
+    <div id="particles-js" class="fixed inset-0 -z-10" aria-hidden="true"></div>
+    <canvas id="star-trail-canvas" aria-hidden="true"></canvas>
+
+    <!-- Header -->
+    <header class="fixed w-full z-50 transition-colors duration-300" id="main-header" role="banner">
+        <nav class="container mx-auto px-8 py-6" role="navigation" aria-label="Main navigation">
+            <div class="flex justify-between items-center">
+                <a href="index.html"
+                    class="text-3xl font-bold glitch relative focus:outline-none focus:ring-2 focus:ring-primary-500 rounded"
+                    data-text="IB.dev" aria-label="Ibrahim Benkacem - Home">
+                    <span class="relative z-10">IB.dev</span>
+                    <span class="absolute top-0 left-0 -z-10 blur-sm text-blue-400 animate-pulse"
+                        aria-hidden="true">IB.dev</span>
+                </a>
+
+                <div class="hidden md:flex space-x-8" role="menubar">
+                    <a href="index.html"
+                        class="nav-link hover:text-primary-400 transition-colors duration-300 relative group focus:outline-none focus:ring-2 focus:ring-primary-500 rounded px-2 py-1"
+                        role="menuitem">
+                        <span class="relative z-10">Home</span>
+                        <span
+                            class="absolute inset-x-0 bottom-0 h-0.5 bg-primary-400 transform scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"
+                            aria-hidden="true"></span>
+                    </a>
+                    <a href="about.html"
+                        class="nav-link hover:text-primary-400 transition-colors duration-300 relative group focus:outline-none focus:ring-2 focus:ring-primary-500 rounded px-2 py-1"
+                        role="menuitem">
+                        <span class="relative z-10">About</span>
+                        <span
+                            class="absolute inset-x-0 bottom-0 h-0.5 bg-primary-400 transform scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"
+                            aria-hidden="true"></span>
+                    </a>
+                    <a href="projects.html"
+                        class="nav-link hover:text-primary-400 transition-colors duration-300 relative group focus:outline-none focus:ring-2 focus:ring-primary-500 rounded px-2 py-1"
+                        role="menuitem" aria-current="page">
+                        <span class="relative z-10 text-primary-400">Projects</span>
+                        <span
+                            class="absolute inset-x-0 bottom-0 h-0.5 bg-primary-400 transform scale-x-100 origin-left transition-transform duration-300"
+                            aria-hidden="true"></span>
+                    </a>
+                    <a href="skills.html"
+                        class="nav-link hover:text-primary-400 transition-colors duration-300 relative group focus:outline-none focus:ring-2 focus:ring-primary-500 rounded px-2 py-1"
+                        role="menuitem">
+                        <span class="relative z-10">Skills</span>
+                        <span
+                            class="absolute inset-x-0 bottom-0 h-0.5 bg-primary-400 transform scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"
+                            aria-hidden="true"></span>
+                    </a>
+                    <a href="contact.html"
+                        class="nav-link hover:text-primary-400 transition-colors duration-300 relative group focus:outline-none focus:ring-2 focus:ring-primary-500 rounded px-2 py-1"
+                        role="menuitem">
+                        <span class="relative z-10">Contact</span>
+                        <span
+                            class="absolute inset-x-0 bottom-0 h-0.5 bg-primary-400 transform scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"
+                            aria-hidden="true"></span>
+                    </a>
+                </div>
+
+                <div class="flex items-center space-x-4">
+                    <button id="mobileMenuButton"
+                        class="md:hidden relative focus:outline-none focus:ring-2 focus:ring-primary-500 rounded p-2"
+                        aria-label="Toggle mobile menu" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu"
+            class="hidden md:hidden bg-gray-900 bg-opacity-95 backdrop-filter backdrop-blur-lg absolute w-full py-4 transition-all duration-300"
+            role="menu">
+            <a href="index.html"
+                class="block py-2 px-4 hover:bg-gray-800 transition-colors duration-300 focus:outline-none focus:bg-gray-700"
+                role="menuitem">Home</a>
+            <a href="about.html"
+                class="block py-2 px-4 hover:bg-gray-800 transition-colors duration-300 focus:outline-none focus:bg-gray-700"
+                role="menuitem">About</a>
+            <a href="projects.html"
+                class="block py-2 px-4 hover:bg-gray-800 transition-colors duration-300 focus:outline-none focus:bg-gray-700"
+                role="menuitem">Projects</a>
+            <a href="skills.html"
+                class="block py-2 px-4 hover:bg-gray-800 transition-colors duration-300 focus:outline-none focus:bg-gray-700"
+                role="menuitem">Skills</a>
+            <a href="contact.html"
+                class="block py-2 px-4 hover:bg-gray-800 transition-colors duration-300 focus:outline-none focus:bg-gray-700"
+                role="menuitem">Contact</a>
+
+            <div class="md:hidden px-4 py-2 border-t border-gray-700 mt-2">
+                <div class="flex justify-between items-center">
+                    <div class="bg-black bg-opacity-50 text-white p-2 rounded">
+                        FPS: <span id="fps-value-mobile">60</span>
+                    </div>
+                    <div class="bg-black bg-opacity-50 text-white p-2 rounded">
+                        Time: <span id="time-value-mobile">00:00:00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-20" id="main-content" role="main">
+        <div id="holographic-container" class="fixed inset-0 pointer-events-none" aria-hidden="true"></div>
+        <canvas id="threejs-canvas" class="fixed inset-0 -z-10" aria-hidden="true"></canvas>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-16 relative overflow-hidden">
+            <div class="container mx-auto px-4">
+                <!-- Title -->
+                <h1 class="text-4xl md:text-6xl font-bold mb-12 text-center glitch relative" data-text="PROJECTS">
+                    PROJECTS
+                </h1>
+
+                <!-- Project Filter -->
+                <div class="flex flex-wrap justify-center mb-12 space-x-2 space-y-2 md:space-y-0" role="tablist"
+                    aria-label="Project categories">
+                    <button
+                        class="filter-btn px-6 py-2 rounded-full bg-primary-600 border border-primary-500 hover:border-primary-400 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary-500"
+                        data-filter="all" role="tab" aria-selected="true" aria-controls="projects-grid">
+                        All Projects
+                    </button>
+                    <button
+                        class="filter-btn px-6 py-2 rounded-full bg-gray-900/30 border border-blue-500 hover:border-blue-400 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary-500"
+                        data-filter="frontend" role="tab" aria-selected="false" aria-controls="projects-grid">
+                        Frontend
+                    </button>
+                    <button
+                        class="filter-btn px-6 py-2 rounded-full bg-gray-900/30 border border-blue-500 hover:border-blue-400 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary-500"
+                        data-filter="backend" role="tab" aria-selected="false" aria-controls="projects-grid">
+                        Backend
+                    </button>
+                    <button
+                        class="filter-btn px-6 py-2 rounded-full bg-gray-900/30 border border-blue-500 hover:border-blue-400 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary-500"
+                        data-filter="fullstack" role="tab" aria-selected="false" aria-controls="projects-grid">
+                        Full Stack
+                    </button>
+                    <button
+                        class="filter-btn px-6 py-2 rounded-full bg-gray-900/30 border border-blue-500 hover:border-blue-400 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary-500"
+                        data-filter="ui-ux" role="tab" aria-selected="false" aria-controls="projects-grid">
+                        UI/UX
+                    </button>
+                </div>
+
+                <!-- Project Grid -->
+                <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" role="tabpanel">
+                    <!-- E-commerce Dashboard -->
+                    <article
+                        class="project-card glassmorphism rounded-xl p-6 transform hover:scale-105 transition-all duration-300"
+                        data-aos="fade-up" data-category="frontend">
+                        <div class="relative group">
+                            <div class="overflow-hidden rounded-lg">
+                                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                    data-src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                    alt="E-commerce Dashboard - Modern responsive admin interface"
+                                    class="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-500 lazy-load"
+                                    loading="lazy">
+                            </div>
+                            <div class="mt-4 space-y-3">
+                                <h3 class="text-xl font-bold text-glow">E-commerce Dashboard</h3>
+                                <p class="text-gray-300 line-clamp-2">Modern e-commerce dashboard with real-time
+                                    analytics, inventory management, and responsive design optimized for all devices.
+                                </p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span
+                                        class="px-3 py-1 text-sm rounded-full neon-border bg-gray-900/30 text-blue-400">React</span>
+                                    <span
+                                        class="px-3 py-1 text-sm rounded-full neon-border bg-gray-900/30 text-blue-400">Tailwind
+                                        CSS</span>
+                                    <span
+                                        class="px-3 py-1 text-sm rounded-full neon-border bg-gray-900/30 text-blue-400">Redux</span>
+                                    <span
+                                        class="px-3 py-1 text-sm rounded-full neon-border bg-gray-900/30 text-blue-400">Chart.js</span>
+                                </div>
+                                <div class="flex space-x-4 mt-4">
+                                    <a href="https://ecommerce-dashboard-demo.vercel.app"
+                                        class="flex-1 px-4 py-2 rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 transform hover:translate-y-[-2px] transition-all duration-300 text-center focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                        target="_blank" rel="noopener noreferrer">
+                                        <span class="flex items-center justify-center">
+                                            <i class="fas fa-eye mr-2" aria-hidden="true"></i>
+                                            Live Demo
+                                        </span>
+                                    </a>
+                                    <a href="https://github.com/ibrahimbenkacem/ecommerce-dashboard"
+                                        class="flex-1 px-4 py-2 rounded-lg border border-blue-500 hover:border-blue-400 transform hover:translate-y-[-2px] transition-all duration-300 text-center focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                        target="_blank" rel="noopener noreferrer">
+                                        <span class="flex items-center justify-center">
+                                            <i class="fab fa-github mr-2" aria-hidden="true"></i>
+                                            Code
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- RESTful API Service -->
+                    <article
+                        class="project-card glassmorphism rounded-xl p-6 transform hover:scale-105 transition-all duration-300"
+                        data-aos="fade-up" data-aos-delay="100" data-category="backend">
+                        <div class="relative group">
+                            <div class="overflow-hidden rounded-lg">
+                                <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                    data-src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                    alt="RESTful API Service - Scalable backend architecture"
+                                    class="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-500 lazy-load"
+                                    loading="lazy">
+                            </div>
+                            <div class="mt-4 space-y-3">
+                                <h3 class="text-xl font-bold text-glow">RESTful API Service</h3>
+                                <p class="text-gray-300 line-clamp-2">Scalable REST API with JWT authentication, rate
+                                    limiting, caching, and comprehensive documentation using OpenAPI specifications.</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span
+                                        class="px-3 py-1 text-sm rounded-full neon-border bg-gray-900/30 text-blue-400">Node.js</span>
+                                    <span
+                                        class="px-3 py-1 text-sm rounded-full neon-border bg-gray-900/30 text-blue-400">Express</span>
+                                    <span
+                                        class="px-3 py-1 text-sm rounded-full neon-border bg-gray-900/30 text-blue-400">MongoDB</span>
+                                    <span
+                                        class="px-3 py-1 text-sm rounded-full neon-border bg-gray-900/30 text-blue-400">Redis</span>
+                                </div>
+                                <div class="flex space-x-4 mt-4">
+                                    <a href="https://api-docs.ibrahimbenkacem.dev"
+                                        class="flex-1 px-4 py-2 rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 transform hover:translate-y-[-2px] transition-all duration-300 text-center focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                        target="_blank" rel="noopener noreferrer">
+                                        <span class="flex items-center justify-center">
+                                            <i class="fas fa-book mr-2" aria-hidden="true"></i>
+                                            Documentation
+                                        </span>
+                                    </a>
+                                    <a href="https://github.com/ibrahimbenkacem/restful-api"
+                                        class="flex-1 px-4 py-2 rounded-lg border border-blue-500 hover:border-blue-400 transform hover:translate-y-[-2px] transition-all duration-300 text-center focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                        target="_blank" rel="noopener noreferrer">
+                                        <span class="flex items-center justify-center">
+                                            <i class="fab fa-github mr-2" aria-hidden="true"></i>
+                                            Code
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Social Media Platform -->
+                    <article
+                        class="project-card glassmorphism rounded-xl p-6 transform hover:scale-105 transition-all duration-300"
+                        data-aos="fade-up" data-aos-delay="200" data-category="fullstack">
+                        <div class="relative group">
+                            <div class="overflow-hidden rounded-lg">
+                                <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                    data-src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                    alt="Social Media Platform - Full-stack application with real-time features"
+                                    class="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-500 lazy-load"
+                                    loading="lazy">
+                            </div>
+                            <div class="mt-4 space-y-3">
+                                <h3 class="text-xl font-bold text-glow">Social Media Platform</h3>
+                                <p class="text-gray-300 line-clamp-2">Full-featured social media platform with real-time
+                                    messaging, notifications, file uploads, and advanced user management.</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span
+                                        class="px-3 py-1 text-sm rounded-full neon-border bg-gray-900/30 text-blue-400">React</span>
+                                    <span
+                                        class="px-3 py-1 text-sm rounded-full neon-border bg-gray-900/30 text-blue-400">Node.js</span>
+                                    <span
+                                        class="px-3 py-1 text-sm rounded-full neon-border bg-gray-900/30 text-blue-400">Socket.io</span>
+                                    <span
+                                        class="px-3 py-1 text-sm rounded-full neon-border bg-gray-900/30 text-blue-400">PostgreSQL</span>
+                                </div>
+                                <div class="flex space-x-4 mt-4">
+                                    <a href="https://social-platform-demo.vercel.app"
+                                        class="flex-1 px-4 py-2 rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 transform hover:translate-y-[-2px] transition-all duration-300 text-center focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                        target="_blank" rel="noopener noreferrer">
+                                        <span class="flex items-center justify-center">
+                                            <i class="fas fa-eye mr-2" aria-hidden="true"></i>
+                                            Live Demo
+                                        </span>
+                                    </a>
+                                    <a href="https://github.com/ibrahimbenkacem/social-platform"
+                                        class="flex-1 px-4 py-2 rounded-lg border border-blue-500 hover:border-blue-400 transform hover:translate-y-[-2px] transition-all duration-300 text-center focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                        target="_blank" rel="noopener noreferrer">
+                                        <span class="flex items-center justify-center">
+                                            <i class="fab fa-github mr-2" aria-hidden="true"></i>
+                                            Code
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Mobile App Design -->
+                    <article
+                        class="project-card glassmorphism rounded-xl p-6 transform hover:scale-105 transition-all duration-300"
+                        data-aos="fade-up" data-aos-delay="300" data-category="ui-ux">
+                        <div class="relative group">
+                            <div class="overflow-hidden rounded-lg">
+                                <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                    data-src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                    alt="Mobile App Design - Modern UI/UX design for mobile application"
+                                    class="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-500 lazy-load"
+                                    loading="lazy">
+                            </div>
+                            <div class="mt-4 space-y-3">
+                                <h3 class="text-xl font-bold text-glow">Mobile App Design</h3>
+                                <p class="text-gray-300 line-clamp-2">Modern mobile app design with intuitive
+                                    navigation, accessibility features, and responsive layout optimized for various
+                                    screen sizes.</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span
+                                        class="px-3 py-1 text-sm rounded-full neon-border bg-gray-900/30 text-blue-400">Figma</span>
+                                    <span
+                                        class="px-3 py-1 text-sm rounded-full neon-border bg-gray-900/30 text-blue-400">Adobe
+                                        XD</span>
+                                    <span
+                                        class="px-3 py-1 text-sm rounded-full neon-border bg-gray-900/30 text-blue-400">Prototyping</span>
+                                    <span
+                                        class="px-3 py-1 text-sm rounded-full neon-border bg-gray-900/30 text-blue-400">User
+                                        Research</span>
+                                </div>
+                                <div class="flex space-x-4 mt-4">
+                                    <a href="https://figma.com/proto/mobile-app-design"
+                                        class="flex-1 px-4 py-2 rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 transform hover:translate-y-[-2px] transition-all duration-300 text-center focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                        target="_blank" rel="noopener noreferrer">
+                                        <span class="flex items-center justify-center">
+                                            <i class="fas fa-eye mr-2" aria-hidden="true"></i>
+                                            Prototype
+                                        </span>
+                                    </a>
+                                    <a href="https://behance.net/ibrahimbenkacem/mobile-design"
+                                        class="flex-1 px-4 py-2 rounded-lg border border-blue-500 hover:border-blue-400 transform hover:translate-y-[-2px] transition-all duration-300 text-center focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                        target="_blank" rel="noopener noreferrer">
+                                        <span class="flex items-center justify-center">
+                                            <i class="fab fa-behance mr-2" aria-hidden="true"></i>
+                                            Case Study
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Task Management App -->
+                    <article
+                        class="project-card glassmorphism rounded-xl p-6 transform hover:scale-105 transition-all duration-300"
+                        data-aos="fade-up" data-aos-delay="400" data-category="frontend">
+                        <div class="relative group">
+                            <div class="overflow-hidden rounded-lg">
+                                <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                    data-src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                    alt="Task Management App - Productivity application with drag-and-drop features"
+                                    class="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-500 lazy-load"
+                                    loading="lazy">
+                            </div>
+                            <div class="mt-4 space-y-3">
+                                <h3 class="text-xl font-bold text-glow">Task Management App</h3>
+                                <p class="text-gray-300 line-clamp-2">Productivity application with drag-and-drop
+                                    functionality, team collaboration features, and advanced filtering options.</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span
+                                        class="px-3 py-1 text-sm rounded-full neon-border bg-gray-900/30 text-blue-400">Vue.js</span>
+                                    <span
+                                        class="px-3 py-1 text-sm rounded-full neon-border bg-gray-900/30 text-blue-400">Vuex</span>
+                                    <span
+                                        class="px-3 py-1 text-sm rounded-full neon-border bg-gray-900/30 text-blue-400">Drag
+                                        & Drop</span>
+                                    <span
+                                        class="px-3 py-1 text-sm rounded-full neon-border bg-gray-900/30 text-blue-400">PWA</span>
+                                </div>
+                                <div class="flex space-x-4 mt-4">
+                                    <a href="https://task-manager-vue.vercel.app"
+                                        class="flex-1 px-4 py-2 rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 transform hover:translate-y-[-2px] transition-all duration-300 text-center focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                        target="_blank" rel="noopener noreferrer">
+                                        <span class="flex items-center justify-center">
+                                            <i class="fas fa-eye mr-2" aria-hidden="true"></i>
+                                            Live Demo
+                                        </span>
+                                    </a>
+                                    <a href="https://github.com/ibrahimbenkacem/task-management"
+                                        class="flex-1 px-4 py-2 rounded-lg border border-blue-500 hover:border-blue-400 transform hover:translate-y-[-2px] transition-all duration-300 text-center focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                        target="_blank" rel="noopener noreferrer">
+                                        <span class="flex items-center justify-center">
+                                            <i class="fab fa-github mr-2" aria-hidden="true"></i>
+                                            Code
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Microservices Architecture -->
+                    <article
+                        class="project-card glassmorphism rounded-xl p-6 transform hover:scale-105 transition-all duration-300"
+                        data-aos="fade-up" data-aos-delay="500" data-category="backend">
+                        <div class="relative group">
+                            <div class="overflow-hidden rounded-lg">
+                                <img src="https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                    data-src="https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                    alt="Microservices Architecture - Scalable distributed system design"
+                                    class="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-500 lazy-load"
+                                    loading="lazy">
+                            </div>
+                            <div class="mt-4 space-y-3">
+                                <h3 class="text-xl font-bold text-glow">Microservices Architecture</h3>
+                                <p class="text-gray-300 line-clamp-2">Scalable microservices architecture with Docker
+                                    containerization, API Gateway, service discovery, and monitoring.</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span
+                                        class="px-3 py-1 text-sm rounded-full neon-border bg-gray-900/30 text-blue-400">Docker</span>
+                                    <span
+                                        class="px-3 py-1 text-sm rounded-full neon-border bg-gray-900/30 text-blue-400">Kubernetes</span>
+                                    <span
+                                        class="px-3 py-1 text-sm rounded-full neon-border bg-gray-900/30 text-blue-400">API
+                                        Gateway</span>
+                                    <span
+                                        class="px-3 py-1 text-sm rounded-full neon-border bg-gray-900/30 text-blue-400">Monitoring</span>
+                                </div>
+                                <div class="flex space-x-4 mt-4">
+                                    <a href="https://microservices-docs.ibrahimbenkacem.dev"
+                                        class="flex-1 px-4 py-2 rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 transform hover:translate-y-[-2px] transition-all duration-300 text-center focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                        target="_blank" rel="noopener noreferrer">
+                                        <span class="flex items-center justify-center">
+                                            <i class="fas fa-book mr-2" aria-hidden="true"></i>
+                                            Architecture
+                                        </span>
+                                    </a>
+                                    <a href="https://github.com/ibrahimbenkacem/microservices-demo"
+                                        class="flex-1 px-4 py-2 rounded-lg border border-blue-500 hover:border-blue-400 transform hover:translate-y-[-2px] transition-all duration-300 text-center focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                        target="_blank" rel="noopener noreferrer">
+                                        <span class="flex items-center justify-center">
+                                            <i class="fab fa-github mr-2" aria-hidden="true"></i>
+                                            Code
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Project Statistics -->
+                <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <div class="stat-card glassmorphism rounded-xl p-6 text-center transform hover:scale-105 transition-transform duration-300"
+                        data-aos="fade-up">
+                        <div class="text-3xl font-bold text-blue-400 mb-2 counter" data-target="50">0</div>
+                        <div class="text-sm text-gray-400">Projects Completed</div>
+                    </div>
+                    <div class="stat-card glassmorphism rounded-xl p-6 text-center transform hover:scale-105 transition-transform duration-300"
+                        data-aos="fade-up" data-aos-delay="100">
+                        <div class="text-3xl font-bold text-purple-400 mb-2 counter" data-target="1200">0</div>
+                        <div class="text-sm text-gray-400">Commits</div>
+                    </div>
+                    <div class="stat-card glassmorphism rounded-xl p-6 text-center transform hover:scale-105 transition-transform duration-300"
+                        data-aos="fade-up" data-aos-delay="200">
+                        <div class="text-3xl font-bold text-green-400 mb-2 counter" data-target="98">0</div>
+                        <div class="text-sm text-gray-400">Success Rate</div>
+                    </div>
+                    <div class="stat-card glassmorphism rounded-xl p-6 text-center transform hover:scale-105 transition-transform duration-300"
+                        data-aos="fade-up" data-aos-delay="300">
+                        <div class="text-3xl font-bold text-pink-400 mb-2 counter" data-target="25">0</div>
+                        <div class="text-sm text-gray-400">Technologies Used</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-12 relative overflow-hidden" role="contentinfo">
+        <div class="container mx-auto px-8 max-w-7xl relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center md:text-left">
+                    <h3 class="text-2xl font-bold mb-4 text-primary-400 glitch" data-text="IB.dev">IB.dev</h3>
+                    <p class="text-gray-400">&copy; 2024 Ibrahim Benkacem. All rights reserved.</p>
+                </div>
+                <div class="text-center">
+                    <h4 class="text-xl font-semibold mb-4 text-primary-300">Quick Links</h4>
+                    <nav aria-label="Footer navigation">
+                        <ul class="space-y-2">
+                            <li><a href="index.html"
+                                    class="text-gray-400 hover:text-primary-400 transition-colors duration-300 focus:outline-none focus:text-primary-400">Home</a>
+                            </li>
+                            <li><a href="about.html"
+                                    class="text-gray-400 hover:text-primary-400 transition-colors duration-300 focus:outline-none focus:text-primary-400">About</a>
+                            </li>
+                            <li><a href="projects.html"
+                                    class="text-gray-400 hover:text-primary-400 transition-colors duration-300 focus:outline-none focus:text-primary-400">Projects</a>
+                            </li>
+                            <li><a href="skills.html"
+                                    class="text-gray-400 hover:text-primary-400 transition-colors duration-300 focus:outline-none focus:text-primary-400">Skills</a>
+                            </li>
+                            <li><a href="contact.html"
+                                    class="text-gray-400 hover:text-primary-400 transition-colors duration-300 focus:outline-none focus:text-primary-400">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="text-center md:text-right">
+                    <h4 class="text-xl font-semibold mb-4 text-primary-300">Connect</h4>
+                    <div class="flex justify-center md:justify-end space-x-4">
+                        <a href="https://twitter.com/ibrahimbenkacem"
+                            class="text-gray-400 hover:text-primary-400 transition-colors duration-300 transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-primary-500 rounded p-1"
+                            aria-label="Twitter">
+                            <i class="fab fa-twitter text-2xl"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/ibrahimbenkacem"
+                            class="text-gray-400 hover:text-primary-400 transition-colors duration-300 transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-primary-500 rounded p-1"
+                            aria-label="LinkedIn">
+                            <i class="fab fa-linkedin text-2xl"></i>
+                        </a>
+                        <a href="https://github.com/ibrahimbenkacem"
+                            class="text-gray-400 hover:text-primary-400 transition-colors duration-300 transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-primary-500 rounded p-1"
+                            aria-label="GitHub">
+                            <i class="fab fa-github text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Loading Screen -->
+    <div id="loading-container" class="fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-75 z-50">
+        <div class="holographic-loader" aria-label="Loading"></div>
+    </div>
+
+    <!-- HUD Container -->
+    <div id="hud-container" class="fixed top-0 left-0 w-full h-full pointer-events-none md:block" aria-hidden="true">
+        <div id="fps-counter"
+            class="absolute top-4 left-4 bg-black bg-opacity-50 text-white p-2 rounded hidden md:block">
+            FPS: <span id="fps-value">60</span>
+        </div>
+        <div id="time-display"
+            class="absolute top-4 right-4 bg-black bg-opacity-50 text-white p-2 rounded hidden md:block">
+            Time: <span id="time-value">00:00:00</span>
+        </div>
+    </div>
+
+    <!-- Scripts - Load in correct order -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.21/vanta.net.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <!-- Custom Scripts -->
+    <script src="js/performance.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/projects.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

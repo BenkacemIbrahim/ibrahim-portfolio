@@ -1,0 +1,36 @@
+{
+  "name": "Ibrahim Benkacem - Full Stack Developer",
+  "short_name": "IB.dev",
+  "description": "Portfolio website of Ibrahim Benkacem - Full Stack Web Developer & UI/UX Designer",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#111827",
+  "theme_color": "#3b82f6",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/placeholder.svg?height=192&width=192",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/placeholder.svg?height=512&width=512",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["portfolio", "developer", "technology"],
+  "lang": "en",
+  "dir": "ltr",
+  "scope": "/",
+  "screenshots": [
+    {
+      "src": "/placeholder.svg?height=640&width=1280",
+      "sizes": "1280x640",
+      "type": "image/svg+xml",
+      "label": "Homepage of Ibrahim Benkacem Portfolio"
+    }
+  ]
+}

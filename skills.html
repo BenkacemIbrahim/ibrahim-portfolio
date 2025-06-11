@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore Ibrahim Benkacem's technical skills and expertise in web development, including frontend, backend, DevOps, and UI/UX design capabilities.">
+    <meta name="keywords"
+        content="Ibrahim Benkacem, Skills, Web Development, Frontend, Backend, React, Node.js, JavaScript, Python, PHP, Laravel">
+    <meta name="author" content="Ibrahim Benkacem">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Skills - Ibrahim Benkacem | Technical Expertise">
+    <meta property="og:description"
+        content="Comprehensive overview of technical skills and expertise in modern web development technologies.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ibrahimbenkacem.dev/skills">
+    <meta property="og:image" content="/images/skills-og.jpg">
+
+    <title>Skills - Ibrahim Benkacem | Technical Expertise & Capabilities</title>
+
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap"
+        as="style">
+
+    <!-- CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: { "50": "#eff6ff", "100": "#dbeafe", "200": "#bfdbfe", "300": "#93c5fd", "400": "#60a5fa", "500": "#3b82f6", "600": "#2563eb", "700": "#1d4ed8", "800": "#1e40af", "900": "#1e3a8a", "950": "#172554" }
+                    },
+                    animation: {
+                        'bounce-slow': 'bounce 3s linear infinite',
+                        'gradient': 'gradient 15s ease infinite',
+                        'spin-slow': 'spin 15s linear infinite',
+                        'morphing': 'morphing 10s ease-in-out infinite',
+                        'floating': 'floating 3s ease-in-out infinite',
+                        'glow': 'glow 2s ease-in-out infinite alternate',
+                    },
+                    keyframes: {
+                        gradient: {
+                            '0%, 100%': { 'background-size': '200% 200%', 'background-position': 'left center' },
+                            '50%': { 'background-size': '200% 200%', 'background-position': 'right center' }
+                        },
+                        morphing: {
+                            '0%': { 'border-radius': '60% 40% 30% 70%/60% 30% 70% 40%' },
+                            '50%': { 'border-radius': '30% 60% 70% 40%/50% 60% 30% 60%' },
+                            '100%': { 'border-radius': '60% 40% 30% 70%/60% 30% 70% 40%' }
+                        },
+                        floating: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' }
+                        },
+                        glow: {
+                            '0%': { boxShadow: '0 0 5px #3b82f6, 0 0 10px #3b82f6, 0 0 15px #3b82f6, 0 0 20px #3b82f6' },
+                            '100%': { boxShadow: '0 0 10px #3b82f6, 0 0 20px #3b82f6, 0 0 30px #3b82f6, 0 0 40px #3b82f6' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-gray-900 text-white transition-all duration-300">
+    <!-- Skip to main content -->
+    <a href="#main-content"
+        class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-primary-600 text-white px-4 py-2 rounded-md z-50">
+        Skip to main content
+    </a>
+
+    <!-- Background Elements -->
+    <div id="vanta-bg" class="fixed inset-0 -z-10" aria-hidden="true"></div>
+    <div id="particles-js" class="fixed inset-0 -z-10" aria-hidden="true"></div>
+    <canvas id="star-trail-canvas" aria-hidden="true"></canvas>
+
+    <!-- Header -->
+    <header class="fixed w-full z-50 transition-colors duration-300" id="main-header" role="banner">
+        <nav class="container mx-auto px-8 py-6" role="navigation" aria-label="Main navigation">
+            <div class="flex justify-between items-center">
+                <a href="index.html"
+                    class="text-3xl font-bold glitch relative focus:outline-none focus:ring-2 focus:ring-primary-500 rounded"
+                    data-text="IB.dev" aria-label="Ibrahim Benkacem - Home">
+                    <span class="relative z-10">IB.dev</span>
+                    <span class="absolute top-0 left-0 -z-10 blur-sm text-blue-400 animate-pulse"
+                        aria-hidden="true">IB.dev</span>
+                </a>
+
+                <div class="hidden md:flex space-x-10" role="menubar">
+                    <a href="index.html"
+                        class="nav-link hover:text-primary-400 transition-colors duration-300 relative group focus:outline-none focus:ring-2 focus:ring-primary-500 rounded px-2 py-1"
+                        role="menuitem">
+                        <span class="relative z-10">Home</span>
+                        <span
+                            class="absolute inset-x-0 bottom-0 h-0.5 bg-primary-400 transform scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"
+                            aria-hidden="true"></span>
+                    </a>
+                    <a href="about.html"
+                        class="nav-link hover:text-primary-400 transition-colors duration-300 relative group focus:outline-none focus:ring-2 focus:ring-primary-500 rounded px-2 py-1"
+                        role="menuitem">
+                        <span class="relative z-10">About</span>
+                        <span
+                            class="absolute inset-x-0 bottom-0 h-0.5 bg-primary-400 transform scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"
+                            aria-hidden="true"></span>
+                    </a>
+                    <a href="projects.html"
+                        class="nav-link hover:text-primary-400 transition-colors duration-300 relative group focus:outline-none focus:ring-2 focus:ring-primary-500 rounded px-2 py-1"
+                        role="menuitem">
+                        <span class="relative z-10">Projects</span>
+                        <span
+                            class="absolute inset-x-0 bottom-0 h-0.5 bg-primary-400 transform scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"
+                            aria-hidden="true"></span>
+                    </a>
+                    <a href="skills.html"
+                        class="nav-link hover:text-primary-400 transition-colors duration-300 relative group focus:outline-none focus:ring-2 focus:ring-primary-500 rounded px-2 py-1"
+                        role="menuitem" aria-current="page">
+                        <span class="relative z-10 text-primary-400">Skills</span>
+                        <span
+                            class="absolute inset-x-0 bottom-0 h-0.5 bg-primary-400 transform scale-x-100 origin-left transition-transform duration-300"
+                            aria-hidden="true"></span>
+                    </a>
+                    <a href="contact.html"
+                        class="nav-link hover:text-primary-400 transition-colors duration-300 relative group focus:outline-none focus:ring-2 focus:ring-primary-500 rounded px-2 py-1"
+                        role="menuitem">
+                        <span class="relative z-10">Contact</span>
+                        <span
+                            class="absolute inset-x-0 bottom-0 h-0.5 bg-primary-400 transform scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"
+                            aria-hidden="true"></span>
+                    </a>
+                </div>
+
+                <div class="flex items-center space-x-4">
+                    <button id="mobileMenuButton"
+                        class="md:hidden relative focus:outline-none focus:ring-2 focus:ring-primary-500 rounded p-2"
+                        aria-label="Toggle mobile menu" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu"
+            class="hidden md:hidden bg-gray-900 bg-opacity-95 backdrop-filter backdrop-blur-lg absolute w-full py-4 transition-all duration-300"
+            role="menu">
+            <a href="index.html"
+                class="block py-2 px-4 hover:bg-gray-800 transition-colors duration-300 focus:outline-none focus:bg-gray-700"
+                role="menuitem">Home</a>
+            <a href="about.html"
+                class="block py-2 px-4 hover:bg-gray-800 transition-colors duration-300 focus:outline-none focus:bg-gray-700"
+                role="menuitem">About</a>
+            <a href="projects.html"
+                class="block py-2 px-4 hover:bg-gray-800 transition-colors duration-300 focus:outline-none focus:bg-gray-700"
+                role="menuitem">Projects</a>
+            <a href="skills.html"
+                class="block py-2 px-4 hover:bg-gray-800 transition-colors duration-300 focus:outline-none focus:bg-gray-700"
+                role="menuitem">Skills</a>
+            <a href="contact.html"
+                class="block py-2 px-4 hover:bg-gray-800 transition-colors duration-300 focus:outline-none focus:bg-gray-700"
+                role="menuitem">Contact</a>
+
+            <div class="md:hidden px-4 py-2 border-t border-gray-700 mt-2">
+                <div class="flex justify-between items-center">
+                    <div class="bg-black bg-opacity-50 text-white p-2 rounded">
+                        FPS: <span id="fps-value-mobile">60</span>
+                    </div>
+                    <div class="bg-black bg-opacity-50 text-white p-2 rounded">
+                        Time: <span id="time-value-mobile">00:00:00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-20" id="main-content" role="main">
+        <div id="holographic-container" class="fixed inset-0 pointer-events-none" aria-hidden="true"></div>
+        <canvas id="threejs-canvas" class="fixed inset-0 -z-10" aria-hidden="true"></canvas>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-20">
+            <div class="container mx-auto px-4">
+                <h1 class="text-4xl md:text-6xl font-bold mb-12 text-center glitch" data-text="Technical Skills">
+                    Technical Skills
+                </h1>
+
+                <!-- Frontend Skills -->
+                <div class="mb-16">
+                    <h2 class="text-3xl font-semibold text-primary-400 mb-8 text-center">Frontend Development</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- HTML5 -->
+                        <div class="skill-card glassmorphism rounded-lg p-6 transform hover:scale-105 transition-all duration-300"
+                            data-aos="fade-up">
+                            <div class="flex items-center mb-4">
+                                <div class="w-16 h-16 rounded-full bg-orange-600 flex items-center justify-center mr-4">
+                                    <i class="fab fa-html5 text-3xl skill-icon" aria-hidden="true"></i>
+                                </div>
+                                <h3 class="text-2xl font-semibold">HTML5</h3>
+                            </div>
+                            <div class="relative pt-1">
+                                <div class="flex mb-2 items-center justify-between">
+                                    <div>
+                                        <span
+                                            class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-orange-600 bg-orange-200">
+                                            Proficiency
+                                        </span>
+                                    </div>
+                                    <div class="text-right">
+                                        <span class="text-xs font-semibold inline-block text-orange-600">95%</span>
+                                    </div>
+                                </div>
+                                <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-orange-200">
+                                    <div style="width: 95%"
+                                        class="progress-bar shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-orange-600"
+                                        role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-300 mt-4">Semantic HTML, accessibility best practices, and modern HTML5
+                                APIs.</p>
+                        </div>
+
+                        <!-- CSS3 -->
+                        <div class="skill-card glassmorphism rounded-lg p-6 transform hover:scale-105 transition-all duration-300"
+                            data-aos="fade-up" data-aos-delay="100">
+                            <div class="flex items-center mb-4">
+                                <div class="w-16 h-16 rounded-full bg-blue-600 flex items-center justify-center mr-4">
+                                    <i class="fab fa-css3-alt text-3xl skill-icon" aria-hidden="true"></i>
+                                </div>
+                                <h3 class="text-2xl font-semibold">CSS3</h3>
+                            </div>
+                            <div class="relative pt-1">
+                                <div class="flex mb-2 items-center justify-between">
+                                    <div>
+                                        <span
+                                            class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-600 bg-blue-200">
+                                            Proficiency
+                                        </span>
+                                    </div>
+                                    <div class="text-right">
+                                        <span class="text-xs font-semibold inline-block text-blue-600">90%</span>
+                                    </div>
+                                </div>
+                                <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-blue-200">
+                                    <div style="width: 90%"
+                                        class="progress-bar shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-blue-600"
+                                        role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-300 mt-4">Advanced styling, animations, Grid, Flexbox, and responsive
+                                design.</p>
+                        </div>
+
+                        <!-- JavaScript -->
+                        <div class="skill-card glassmorphism rounded-lg p-6 transform hover:scale-105 transition-all duration-300"
+                            data-aos="fade-up" data-aos-delay="200">
+                            <div class="flex items-center mb-4">
+                                <div class="w-16 h-16 rounded-full bg-yellow-500 flex items-center justify-center mr-4">
+                                    <i class="fab fa-js text-3xl skill-icon text-black" aria-hidden="true"></i>
+                                </div>
+                                <h3 class="text-2xl font-semibold">JavaScript</h3>
+                            </div>
+                            <div class="relative pt-1">
+                                <div class="flex mb-2 items-center justify-between">
+                                    <div>
+                                        <span
+                                            class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-yellow-600 bg-yellow-200">
+                                            Proficiency
+                                        </span>
+                                    </div>
+                                    <div class="text-right">
+                                        <span class="text-xs font-semibold inline-block text-yellow-600">88%</span>
+                                    </div>
+                                </div>
+                                <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-yellow-200">
+                                    <div style="width: 88%"
+                                        class="progress-bar shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-yellow-500"
+                                        role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-300 mt-4">ES6+, async/await, DOM manipulation, and modern JavaScript
+                                patterns.</p>
+                        </div>
+
+                        <!-- React -->
+                        <div class="skill-card glassmorphism rounded-lg p-6 transform hover:scale-105 transition-all duration-300"
+                            data-aos="fade-up" data-aos-delay="300">
+                            <div class="flex items-center mb-4">
+                                <div class="w-16 h-16 rounded-full bg-cyan-500 flex items-center justify-center mr-4">
+                                    <i class="fab fa-react text-3xl skill-icon" aria-hidden="true"></i>
+                                </div>
+                                <h3 class="text-2xl font-semibold">React</h3>
+                            </div>
+                            <div class="relative pt-1">
+                                <div class="flex mb-2 items-center justify-between">
+                                    <div>
+                                        <span
+                                            class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-cyan-600 bg-cyan-200">
+                                            Proficiency
+                                        </span>
+                                    </div>
+                                    <div class="text-right">
+                                        <span class="text-xs font-semibold inline-block text-cyan-600">85%</span>
+                                    </div>
+                                </div>
+                                <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-cyan-200">
+                                    <div style="width: 85%"
+                                        class="progress-bar shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-cyan-500"
+                                        role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-300 mt-4">Hooks, Context API, Redux, and component-based architecture.
+                            </p>
+                        </div>
+
+                        <!-- Vue.js -->
+                        <div class="skill-card glassmorphism rounded-lg p-6 transform hover:scale-105 transition-all duration-300"
+                            data-aos="fade-up" data-aos-delay="400">
+                            <div class="flex items-center mb-4">
+                                <div class="w-16 h-16 rounded-full bg-green-500 flex items-center justify-center mr-4">
+                                    <i class="fab fa-vuejs text-3xl skill-icon" aria-hidden="true"></i>
+                                </div>
+                                <h3 class="text-2xl font-semibold">Vue.js</h3>
+                            </div>
+                            <div class="relative pt-1">
+                                <div class="flex mb-2 items-center justify-between">
+                                    <div>
+                                        <span
+                                            class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-green-600 bg-green-200">
+                                            Proficiency
+                                        </span>
+                                    </div>
+                                    <div class="text-right">
+                                        <span class="text-xs font-semibold inline-block text-green-600">80%</span>
+                                    </div>
+                                </div>
+                                <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-green-200">
+                                    <div style="width: 80%"
+                                        class="progress-bar shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-green-500"
+                                        role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-300 mt-4">Composition API, Vuex, Vue Router, and reactive programming.
+                            </p>
+                        </div>
+
+                        <!-- Tailwind CSS -->
+                        <div class="skill-card glassmorphism rounded-lg p-6 transform hover:scale-105 transition-all duration-300"
+                            data-aos="fade-up" data-aos-delay="500">
+                            <div class="flex items-center mb-4">
+                                <div class="w-16 h-16 rounded-full bg-teal-500 flex items-center justify-center mr-4">
+                                    <i class="fas fa-wind text-3xl skill-icon" aria-hidden="true"></i>
+                                </div>
+                                <h3 class="text-2xl font-semibold">Tailwind CSS</h3>
+                            </div>
+                            <div class="relative pt-1">
+                                <div class="flex mb-2 items-center justify-between">
+                                    <div>
+                                        <span
+                                            class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-teal-600 bg-teal-200">
+                                            Proficiency
+                                        </span>
+                                    </div>
+                                    <div class="text-right">
+                                        <span class="text-xs font-semibold inline-block text-teal-600">92%</span>
+                                    </div>
+                                </div>
+                                <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-teal-200">
+                                    <div style="width: 92%"
+                                        class="progress-bar shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-teal-500"
+                                        role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-300 mt-4">Utility-first CSS framework for rapid UI development and
+                                customization.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend Skills -->
+                <div class="mb-16">
+                    <h2 class="text-3xl font-semibold text-primary-400 mb-8 text-center">Backend Development</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Node.js -->
+                        <div class="skill-card glassmorphism rounded-lg p-6 transform hover:scale-105 transition-all duration-300"
+                            data-aos="fade-up">
+                            <div class="flex items-center mb-4">
+                                <div class="w-16 h-16 rounded-full bg-green-600 flex items-center justify-center mr-4">
+                                    <i class="fab fa-node-js text-3xl skill-icon" aria-hidden="true"></i>
+                                </div>
+                                <h3 class="text-2xl font-semibold">Node.js</h3>
+                            </div>
+                            <div class="relative pt-1">
+                                <div class="flex mb-2 items-center justify-between">
+                                    <div>
+                                        <span
+                                            class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-green-600 bg-green-200">
+                                            Proficiency
+                                        </span>
+                                    </div>
+                                    <div class="text-right">
+                                        <span class="text-xs font-semibold inline-block text-green-600">82%</span>
+                                    </div>
+                                </div>
+                                <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-green-200">
+                                    <div style="width: 82%"
+                                        class="progress-bar shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-green-600"
+                                        role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-300 mt-4">Express.js, RESTful APIs, middleware, and server-side
+                                development.</p>
+                        </div>
+
+                        <!-- Python -->
+                        <div class="skill-card glassmorphism rounded-lg p-6 transform hover:scale-105 transition-all duration-300"
+                            data-aos="fade-up" data-aos-delay="100">
+                            <div class="flex items-center mb-4">
+                                <div class="w-16 h-16 rounded-full bg-blue-500 flex items-center justify-center mr-4">
+                                    <i class="fab fa-python text-3xl skill-icon" aria-hidden="true"></i>
+                                </div>
+                                <h3 class="text-2xl font-semibold">Python</h3>
+                            </div>
+                            <div class="relative pt-1">
+                                <div class="flex mb-2 items-center justify-between">
+                                    <div>
+                                        <span
+                                            class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-600 bg-blue-200">
+                                            Proficiency
+                                        </span>
+                                    </div>
+                                    <div class="text-right">
+                                        <span class="text-xs font-semibold inline-block text-blue-600">78%</span>
+                                    </div>
+                                </div>
+                                <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-blue-200">
+                                    <div style="width: 78%"
+                                        class="progress-bar shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-blue-500"
+                                        role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-300 mt-4">Django, Flask, data analysis, automation, and scripting.</p>
+                        </div>
+
+                        <!-- PHP -->
+                        <div class="skill-card glassmorphism rounded-lg p-6 transform hover:scale-105 transition-all duration-300"
+                            data-aos="fade-up" data-aos-delay="200">
+                            <div class="flex items-center mb-4">
+                                <div class="w-16 h-16 rounded-full bg-purple-600 flex items-center justify-center mr-4">
+                                    <i class="fab fa-php text-3xl skill-icon" aria-hidden="true"></i>
+                                </div>
+                                <h3 class="text-2xl font-semibold">PHP</h3>
+                            </div>
+                            <div class="relative pt-1">
+                                <div class="flex mb-2 items-center justify-between">
+                                    <div>
+                                        <span
+                                            class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-purple-600 bg-purple-200">
+                                            Proficiency
+                                        </span>
+                                    </div>
+                                    <div class="text-right">
+                                        <span class="text-xs font-semibold inline-block text-purple-600">85%</span>
+                                    </div>
+                                </div>
+                                <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-purple-200">
+                                    <div style="width: 85%"
+                                        class="progress-bar shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-purple-600"
+                                        role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-300 mt-4">Server-side development, OOP principles, and web application
+                                architecture.</p>
+                        </div>
+
+                        <!-- Laravel -->
+                        <div class="skill-card glassmorphism rounded-lg p-6 transform hover:scale-105 transition-all duration-300"
+                            data-aos="fade-up" data-aos-delay="300">
+                            <div class="flex items-center mb-4">
+                                <div class="w-16 h-16 rounded-full bg-red-600 flex items-center justify-center mr-4">
+                                    <i class="fab fa-laravel text-3xl skill-icon" aria-hidden="true"></i>
+                                </div>
+                                <h3 class="text-2xl font-semibold">Laravel</h3>
+                            </div>
+                            <div class="relative pt-1">
+                                <div class="flex mb-2 items-center justify-between">
+                                    <div>
+                                        <span
+                                            class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-red-600 bg-red-200">
+                                            Proficiency
+                                        </span>
+                                    </div>
+                                    <div class="text-right">
+                                        <span class="text-xs font-semibold inline-block text-red-600">80%</span>
+                                    </div>
+                                </div>
+                                <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-red-200">
+                                    <div style="width: 80%"
+                                        class="progress-bar shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-red-600"
+                                        role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-300 mt-4">Eloquent ORM, Artisan CLI, routing, and MVC architecture.</p>
+                        </div>
+
+                        <!-- MongoDB -->
+                        <div class="skill-card glassmorphism rounded-lg p-6 transform hover:scale-105 transition-all duration-300"
+                            data-aos="fade-up" data-aos-delay="400">
+                            <div class="flex items-center mb-4">
+                                <div class="w-16 h-16 rounded-full bg-green-700 flex items-center justify-center mr-4">
+                                    <i class="fas fa-database text-3xl skill-icon" aria-hidden="true"></i>
+                                </div>
+                                <h3 class="text-2xl font-semibold">MongoDB</h3>
+                            </div>
+                            <div class="relative pt-1">
+                                <div class="flex mb-2 items-center justify-between">
+                                    <div>
+                                        <span
+                                            class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-green-600 bg-green-200">
+                                            Proficiency
+                                        </span>
+                                    </div>
+                                    <div class="text-right">
+                                        <span class="text-xs font-semibold inline-block text-green-600">75%</span>
+                                    </div>
+                                </div>
+                                <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-green-200">
+                                    <div style="width: 75%"
+                                        class="progress-bar shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-green-700"
+                                        role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-300 mt-4">NoSQL database design, aggregation pipelines, and document
+                                modeling.</p>
+                        </div>
+
+                        <!-- MySQL -->
+                        <div class="skill-card glassmorphism rounded-lg p-6 transform hover:scale-105 transition-all duration-300"
+                            data-aos="fade-up" data-aos-delay="500">
+                            <div class="flex items-center mb-4">
+                                <div class="w-16 h-16 rounded-full bg-blue-700 flex items-center justify-center mr-4">
+                                    <i class="fas fa-database text-3xl skill-icon" aria-hidden="true"></i>
+                                </div>
+                                <h3 class="text-2xl font-semibold">MySQL</h3>
+                            </div>
+                            <div class="relative pt-1">
+                                <div class="flex mb-2 items-center justify-between">
+                                    <div>
+                                        <span
+                                            class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-600 bg-blue-200">
+                                            Proficiency
+                                        </span>
+                                    </div>
+                                    <div class="text-right">
+                                        <span class="text-xs font-semibold inline-block text-blue-600">88%</span>
+                                    </div>
+                                </div>
+                                <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-blue-200">
+                                    <div style="width: 88%"
+                                        class="progress-bar shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-blue-700"
+                                        role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-300 mt-4">Database design, optimization, complex queries, and
+                                performance tuning.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DevOps & Tools -->
+                <div class="mb-16">
+                    <h2 class="text-3xl font-semibold text-primary-400 mb-8 text-center">DevOps & Tools</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Git -->
+                        <div class="skill-card glassmorphism rounded-lg p-6 transform hover:scale-105 transition-all duration-300"
+                            data-aos="fade-up">
+                            <div class="flex items-center mb-4">
+                                <div class="w-16 h-16 rounded-full bg-orange-500 flex items-center justify-center mr-4">
+                                    <i class="fab fa-git-alt text-3xl skill-icon" aria-hidden="true"></i>
+                                </div>
+                                <h3 class="text-2xl font-semibold">Git</h3>
+                            </div>
+                            <div class="relative pt-1">
+                                <div class="flex mb-2 items-center justify-between">
+                                    <div>
+                                        <span
+                                            class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-orange-600 bg-orange-200">
+                                            Proficiency
+                                        </span>
+                                    </div>
+                                    <div class="text-right">
+                                        <span class="text-xs font-semibold inline-block text-orange-600">90%</span>
+                                    </div>
+                                </div>
+                                <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-orange-200">
+                                    <div style="width: 90%"
+                                        class="progress-bar shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-orange-500"
+                                        role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-300 mt-4">Version control, branching strategies, and collaborative
+                                development workflows.</p>
+                        </div>
+
+                        <!-- Docker -->
+                        <div class="skill-card glassmorphism rounded-lg p-6 transform hover:scale-105 transition-all duration-300"
+                            data-aos="fade-up" data-aos-delay="100">
+                            <div class="flex items-center mb-4">
+                                <div class="w-16 h-16 rounded-full bg-blue-600 flex items-center justify-center mr-4">
+                                    <i class="fab fa-docker text-3xl skill-icon" aria-hidden="true"></i>
+                                </div>
+                                <h3 class="text-2xl font-semibold">Docker</h3>
+                            </div>
+                            <div class="relative pt-1">
+                                <div class="flex mb-2 items-center justify-between">
+                                    <div>
+                                        <span
+                                            class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-600 bg-blue-200">
+                                            Proficiency
+                                        </span>
+                                    </div>
+                                    <div class="text-right">
+                                        <span class="text-xs font-semibold inline-block text-blue-600">75%</span>
+                                    </div>
+                                </div>
+                                <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-blue-200">
+                                    <div style="width: 75%"
+                                        class="progress-bar shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-blue-600"
+                                        role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-300 mt-4">Containerization, Docker Compose, and deployment automation.
+                            </p>
+                        </div>
+
+                        <!-- AWS -->
+                        <div class="skill-card glassmorphism rounded-lg p-6 transform hover:scale-105 transition-all duration-300"
+                            data-aos="fade-up" data-aos-delay="200">
+                            <div class="flex items-center mb-4">
+                                <div class="w-16 h-16 rounded-full bg-yellow-600 flex items-center justify-center mr-4">
+                                    <i class="fab fa-aws text-3xl skill-icon" aria-hidden="true"></i>
+                                </div>
+                                <h3 class="text-2xl font-semibold">AWS</h3>
+                            </div>
+                            <div class="relative pt-1">
+                                <div class="flex mb-2 items-center justify-between">
+                                    <div>
+                                        <span
+                                            class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-yellow-600 bg-yellow-200">
+                                            Proficiency
+                                        </span>
+                                    </div>
+                                    <div class="text-right">
+                                        <span class="text-xs font-semibold inline-block text-yellow-600">70%</span>
+                                    </div>
+                                </div>
+                                <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-yellow-200">
+                                    <div style="width: 70%"
+                                        class="progress-bar shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-yellow-600"
+                                        role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-300 mt-4">EC2, S3, Lambda, RDS, and cloud infrastructure management.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- UI/UX Design -->
+                <div class="mb-16">
+                    <h2 class="text-3xl font-semibold text-primary-400 mb-8 text-center">UI/UX Design</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Figma -->
+                        <div class="skill-card glassmorphism rounded-lg p-6 transform hover:scale-105 transition-all duration-300"
+                            data-aos="fade-up">
+                            <div class="flex items-center mb-4">
+                                <div class="w-16 h-16 rounded-full bg-purple-500 flex items-center justify-center mr-4">
+                                    <i class="fab fa-figma text-3xl skill-icon" aria-hidden="true"></i>
+                                </div>
+                                <h3 class="text-2xl font-semibold">Figma</h3>
+                            </div>
+                            <div class="relative pt-1">
+                                <div class="flex mb-2 items-center justify-between">
+                                    <div>
+                                        <span
+                                            class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-purple-600 bg-purple-200">
+                                            Proficiency
+                                        </span>
+                                    </div>
+                                    <div class="text-right">
+                                        <span class="text-xs font-semibold inline-block text-purple-600">85%</span>
+                                    </div>
+                                </div>
+                                <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-purple-200">
+                                    <div style="width: 85%"
+                                        class="progress-bar shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-purple-500"
+                                        role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-300 mt-4">Wireframing, prototyping, design systems, and collaborative
+                                design.</p>
+                        </div>
+
+                        <!-- UI Design -->
+                        <div class="skill-card glassmorphism rounded-lg p-6 transform hover:scale-105 transition-all duration-300"
+                            data-aos="fade-up" data-aos-delay="100">
+                            <div class="flex items-center mb-4">
+                                <div class="w-16 h-16 rounded-full bg-pink-500 flex items-center justify-center mr-4">
+                                    <i class="fas fa-palette text-3xl skill-icon" aria-hidden="true"></i>
+                                </div>
+                                <h3 class="text-2xl font-semibold">UI Design</h3>
+                            </div>
+                            <div class="relative pt-1">
+                                <div class="flex mb-2 items-center justify-between">
+                                    <div>
+                                        <span
+                                            class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200">
+                                            Proficiency
+                                        </span>
+                                    </div>
+                                    <div class="text-right">
+                                        <span class="text-xs font-semibold inline-block text-pink-600">80%</span>
+                                    </div>
+                                </div>
+                                <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-pink-200">
+                                    <div style="width: 80%"
+                                        class="progress-bar shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-pink-500"
+                                        role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-300 mt-4">Visual design, typography, color theory, and interface
+                                aesthetics.</p>
+                        </div>
+
+                        <!-- UX Research -->
+                        <div class="skill-card glassmorphism rounded-lg p-6 transform hover:scale-105 transition-all duration-300"
+                            data-aos="fade-up" data-aos-delay="200">
+                            <div class="flex items-center mb-4">
+                                <div class="w-16 h-16 rounded-full bg-indigo-500 flex items-center justify-center mr-4">
+                                    <i class="fas fa-users text-3xl skill-icon" aria-hidden="true"></i>
+                                </div>
+                                <h3 class="text-2xl font-semibold">UX Research</h3>
+                            </div>
+                            <div class="relative pt-1">
+                                <div class="flex mb-2 items-center justify-between">
+                                    <div>
+                                        <span
+                                            class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-indigo-600 bg-indigo-200">
+                                            Proficiency
+                                        </span>
+                                    </div>
+                                    <div class="text-right">
+                                        <span class="text-xs font-semibold inline-block text-indigo-600">75%</span>
+                                    </div>
+                                </div>
+                                <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-indigo-200">
+                                    <div style="width: 75%"
+                                        class="progress-bar shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-indigo-500"
+                                        role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-300 mt-4">User research, usability testing, personas, and journey
+                                mapping.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certifications & Learning -->
+                <div class="mb-16">
+                    <h2 class="text-3xl font-semibold text-primary-400 mb-8 text-center">Certifications & Continuous
+                        Learning</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="glassmorphism rounded-lg p-6" data-aos="fade-up">
+                            <h3 class="text-xl font-semibold mb-4 text-primary-300">Current Certifications</h3>
+                            <ul class="space-y-3">
+                                <li class="flex items-center">
+                                    <i class="fas fa-certificate text-primary-400 mr-3" aria-hidden="true"></i>
+                                    <span>AWS Certified Cloud Practitioner (In Progress)</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-certificate text-primary-400 mr-3" aria-hidden="true"></i>
+                                    <span>Google Analytics Certified</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-certificate text-primary-400 mr-3" aria-hidden="true"></i>
+                                    <span>Meta Frontend Developer Certificate</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="glassmorphism rounded-lg p-6" data-aos="fade-up" data-aos-delay="100">
+                            <h3 class="text-xl font-semibold mb-4 text-primary-300">Currently Learning</h3>
+                            <ul class="space-y-3">
+                                <li class="flex items-center">
+                                    <i class="fas fa-book text-primary-400 mr-3" aria-hidden="true"></i>
+                                    <span>TypeScript Advanced Patterns</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-book text-primary-400 mr-3" aria-hidden="true"></i>
+                                    <span>Kubernetes & Container Orchestration</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-book text-primary-400 mr-3" aria-hidden="true"></i>
+                                    <span>GraphQL & Apollo</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-book text-primary-400 mr-3" aria-hidden="true"></i>
+                                    <span>Machine Learning Fundamentals</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-12 relative overflow-hidden" role="contentinfo">
+        <div class="container mx-auto px-8 max-w-7xl relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center md:text-left">
+                    <h3 class="text-2xl font-bold mb-4 text-primary-400 glitch" data-text="IB.dev">IB.dev</h3>
+                    <p class="text-gray-400">&copy; 2024 Ibrahim Benkacem. All rights reserved.</p>
+                </div>
+                <div class="text-center">
+                    <h4 class="text-xl font-semibold mb-4 text-primary-300">Quick Links</h4>
+                    <nav aria-label="Footer navigation">
+                        <ul class="space-y-2">
+                            <li><a href="index.html"
+                                    class="text-gray-400 hover:text-primary-400 transition-colors duration-300 focus:outline-none focus:text-primary-400">Home</a>
+                            </li>
+                            <li><a href="about.html"
+                                    class="text-gray-400 hover:text-primary-400 transition-colors duration-300 focus:outline-none focus:text-primary-400">About</a>
+                            </li>
+                            <li><a href="projects.html"
+                                    class="text-gray-400 hover:text-primary-400 transition-colors duration-300 focus:outline-none focus:text-primary-400">Projects</a>
+                            </li>
+                            <li><a href="skills.html"
+                                    class="text-gray-400 hover:text-primary-400 transition-colors duration-300 focus:outline-none focus:text-primary-400">Skills</a>
+                            </li>
+                            <li><a href="contact.html"
+                                    class="text-gray-400 hover:text-primary-400 transition-colors duration-300 focus:outline-none focus:text-primary-400">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="text-center md:text-right">
+                    <h4 class="text-xl font-semibold mb-4 text-primary-300">Connect</h4>
+                    <div class="flex justify-center md:justify-end space-x-4">
+                        <a href="https://twitter.com/ibrahimbenkacem"
+                            class="text-gray-400 hover:text-primary-400 transition-colors duration-300 transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-primary-500 rounded p-1"
+                            aria-label="Twitter">
+                            <i class="fab fa-twitter text-2xl"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/ibrahimbenkacem"
+                            class="text-gray-400 hover:text-primary-400 transition-colors duration-300 transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-primary-500 rounded p-1"
+                            aria-label="LinkedIn">
+                            <i class="fab fa-linkedin text-2xl"></i>
+                        </a>
+                        <a href="https://github.com/ibrahimbenkacem"
+                            class="text-gray-400 hover:text-primary-400 transition-colors duration-300 transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-primary-500 rounded p-1"
+                            aria-label="GitHub">
+                            <i class="fab fa-github text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Loading Screen -->
+    <div id="loading-container" class="fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-75 z-50">
+        <div class="holographic-loader" aria-label="Loading"></div>
+    </div>
+
+    <!-- HUD Container -->
+    <div id="hud-container" class="fixed top-0 left-0 w-full h-full pointer-events-none md:block" aria-hidden="true">
+        <div id="fps-counter"
+            class="absolute top-4 left-4 bg-black bg-opacity-50 text-white p-2 rounded hidden md:block">
+            FPS: <span id="fps-value">60</span>
+        </div>
+        <div id="time-display"
+            class="absolute top-4 right-4 bg-black bg-opacity-50 text-white p-2 rounded hidden md:block">
+            Time: <span id="time-value">00:00:00</span>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.21/vanta.net.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- Custom Scripts -->
+    <script src="js/performance.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/skills.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

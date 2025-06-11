@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Learn more about Ibrahim Benkacem - Full Stack Web Developer with expertise in modern technologies and passionate about creating exceptional user experiences.">
+    <meta name="keywords"
+        content="Ibrahim Benkacem, About, Web Developer, Full Stack Developer, Biography, Experience, Skills, Journey">
+    <meta name="author" content="Ibrahim Benkacem">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="About Ibrahim Benkacem - Full Stack Developer">
+    <meta property="og:description"
+        content="Passionate web developer with expertise in modern technologies and exceptional user experiences.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ibrahimbenkacem.dev/about">
+    <meta property="og:image" content="/images/about-og.jpg">
+
+    <title>About - Ibrahim Benkacem | Full Stack Developer Journey</title>
+
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap"
+        as="style">
+
+    <!-- CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: { "50": "#eff6ff", "100": "#dbeafe", "200": "#bfdbfe", "300": "#93c5fd", "400": "#60a5fa", "500": "#3b82f6", "600": "#2563eb", "700": "#1d4ed8", "800": "#1e40af", "900": "#1e3a8a", "950": "#172554" }
+                    },
+                    animation: {
+                        'bounce-slow': 'bounce 3s linear infinite',
+                        'gradient': 'gradient 15s ease infinite',
+                        'spin-slow': 'spin 15s linear infinite',
+                        'morphing': 'morphing 10s ease-in-out infinite',
+                        'floating': 'floating 3s ease-in-out infinite',
+                        'glow': 'glow 2s ease-in-out infinite alternate',
+                        'scanning': 'scanning 3s linear infinite',
+                    },
+                    keyframes: {
+                        gradient: {
+                            '0%, 100%': { 'background-size': '200% 200%', 'background-position': 'left center' },
+                            '50%': { 'background-size': '200% 200%', 'background-position': 'right center' }
+                        },
+                        morphing: {
+                            '0%': { 'border-radius': '60% 40% 30% 70%/60% 30% 70% 40%' },
+                            '50%': { 'border-radius': '30% 60% 70% 40%/50% 60% 30% 60%' },
+                            '100%': { 'border-radius': '60% 40% 30% 70%/60% 30% 70% 40%' }
+                        },
+                        floating: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' }
+                        },
+                        glow: {
+                            '0%': { boxShadow: '0 0 5px #3b82f6, 0 0 10px #3b82f6, 0 0 15px #3b82f6, 0 0 20px #3b82f6' },
+                            '100%': { boxShadow: '0 0 10px #3b82f6, 0 0 20px #3b82f6, 0 0 30px #3b82f6, 0 0 40px #3b82f6' }
+                        },
+                        scanning: {
+                            '0%': { transform: 'translateY(-100%)' },
+                            '100%': { transform: 'translateY(1000%)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-gray-900 text-white transition-all duration-300">
+    <!-- Skip to main content -->
+    <a href="#main-content"
+        class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-primary-600 text-white px-4 py-2 rounded-md z-50">
+        Skip to main content
+    </a>
+
+    <!-- Background Elements -->
+    <div id="vanta-bg" class="fixed inset-0 -z-10" aria-hidden="true"></div>
+    <div id="particles-js" class="fixed inset-0 -z-10" aria-hidden="true"></div>
+    <canvas id="star-trail-canvas" aria-hidden="true"></canvas>
+
+    <!-- Header -->
+    <header class="fixed w-full z-50 transition-colors duration-300" id="main-header" role="banner">
+        <nav class="container mx-auto px-8 py-6" role="navigation" aria-label="Main navigation">
+            <div class="flex justify-between items-center">
+                <a href="index.html"
+                    class="text-3xl font-bold glitch relative focus:outline-none focus:ring-2 focus:ring-primary-500 rounded"
+                    data-text="IB.dev" aria-label="Ibrahim Benkacem - Home">
+                    <span class="relative z-10">IB.dev</span>
+                    <span class="absolute top-0 left-0 -z-10 blur-sm text-blue-400 animate-pulse"
+                        aria-hidden="true">IB.dev</span>
+                </a>
+
+                <div class="hidden md:flex space-x-8" role="menubar">
+                    <a href="index.html"
+                        class="nav-link hover:text-primary-400 transition-colors duration-300 relative group focus:outline-none focus:ring-2 focus:ring-primary-500 rounded px-2 py-1"
+                        role="menuitem">
+                        <span class="relative z-10">Home</span>
+                        <span
+                            class="absolute inset-x-0 bottom-0 h-0.5 bg-primary-400 transform scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"
+                            aria-hidden="true"></span>
+                    </a>
+                    <a href="about.html"
+                        class="nav-link hover:text-primary-400 transition-colors duration-300 relative group focus:outline-none focus:ring-2 focus:ring-primary-500 rounded px-2 py-1"
+                        role="menuitem" aria-current="page">
+                        <span class="relative z-10 text-primary-400">About</span>
+                        <span
+                            class="absolute inset-x-0 bottom-0 h-0.5 bg-primary-400 transform scale-x-100 origin-left transition-transform duration-300"
+                            aria-hidden="true"></span>
+                    </a>
+                    <a href="projects.html"
+                        class="nav-link hover:text-primary-400 transition-colors duration-300 relative group focus:outline-none focus:ring-2 focus:ring-primary-500 rounded px-2 py-1"
+                        role="menuitem">
+                        <span class="relative z-10">Projects</span>
+                        <span
+                            class="absolute inset-x-0 bottom-0 h-0.5 bg-primary-400 transform scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"
+                            aria-hidden="true"></span>
+                    </a>
+                    <a href="skills.html"
+                        class="nav-link hover:text-primary-400 transition-colors duration-300 relative group focus:outline-none focus:ring-2 focus:ring-primary-500 rounded px-2 py-1"
+                        role="menuitem">
+                        <span class="relative z-10">Skills</span>
+                        <span
+                            class="absolute inset-x-0 bottom-0 h-0.5 bg-primary-400 transform scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"
+                            aria-hidden="true"></span>
+                    </a>
+                    <a href="contact.html"
+                        class="nav-link hover:text-primary-400 transition-colors duration-300 relative group focus:outline-none focus:ring-2 focus:ring-primary-500 rounded px-2 py-1"
+                        role="menuitem">
+                        <span class="relative z-10">Contact</span>
+                        <span
+                            class="absolute inset-x-0 bottom-0 h-0.5 bg-primary-400 transform scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"
+                            aria-hidden="true"></span>
+                    </a>
+                </div>
+
+                <div class="flex items-center space-x-4">
+                    <button id="mobileMenuButton"
+                        class="md:hidden relative focus:outline-none focus:ring-2 focus:ring-primary-500 rounded p-2"
+                        aria-label="Toggle mobile menu" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu"
+            class="hidden md:hidden bg-gray-900 bg-opacity-95 backdrop-filter backdrop-blur-lg absolute w-full py-4 transition-all duration-300"
+            role="menu">
+            <a href="index.html"
+                class="block py-2 px-4 hover:bg-gray-800 transition-colors duration-300 focus:outline-none focus:bg-gray-700"
+                role="menuitem">Home</a>
+            <a href="about.html"
+                class="block py-2 px-4 hover:bg-gray-800 transition-colors duration-300 focus:outline-none focus:bg-gray-700"
+                role="menuitem">About</a>
+            <a href="projects.html"
+                class="block py-2 px-4 hover:bg-gray-800 transition-colors duration-300 focus:outline-none focus:bg-gray-700"
+                role="menuitem">Projects</a>
+            <a href="skills.html"
+                class="block py-2 px-4 hover:bg-gray-800 transition-colors duration-300 focus:outline-none focus:bg-gray-700"
+                role="menuitem">Skills</a>
+            <a href="contact.html"
+                class="block py-2 px-4 hover:bg-gray-800 transition-colors duration-300 focus:outline-none focus:bg-gray-700"
+                role="menuitem">Contact</a>
+
+            <div class="md:hidden px-4 py-2 border-t border-gray-700 mt-2">
+                <div class="flex justify-between items-center">
+                    <div class="bg-black bg-opacity-50 text-white p-2 rounded">
+                        FPS: <span id="fps-value-mobile">60</span>
+                    </div>
+                    <div class="bg-black bg-opacity-50 text-white p-2 rounded">
+                        Time: <span id="time-value-mobile">00:00:00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-20" id="main-content" role="main">
+        <div id="holographic-container" class="fixed inset-0 pointer-events-none" aria-hidden="true"></div>
+        <canvas id="threejs-canvas" class="fixed inset-0 -z-10" aria-hidden="true"></canvas>
+
+        <!-- About Section -->
+        <section id="about" class="py-20">
+            <div class="container mx-auto px-8 max-w-7xl">
+                <h1 class="text-4xl md:text-6xl font-bold mb-12 text-center glitch" data-text="ABOUT ME">ABOUT ME</h1>
+
+                <!-- Hero Introduction -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20">
+                    <div class="lg:w-1/2 flex justify-center animate-slideUp" data-aos="fade-left" style="animation-delay: 0.6s;">
+                        <div class="relative group">
+                            <!-- Animated border/glow effect container -->
+                            <div
+                                class="absolute -inset-1 bg-gradient-to-r from-primary-600 via-primary-400 to-primary-600 rounded-full blur-lg opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-gradient">
+                            </div>
+                    
+                            <!-- Image container with hover effects -->
+                            <div class="relative w-80 h-80 overflow-hidden rounded-full" id="imageContainer">
+                                <!-- Holographic overlay -->
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-tr from-primary-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                </div>
+                    
+                                <!-- Main image -->
+                                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/13%20%283%29.PNG-ezzpU21PzAKOn64zIrpd5eANcMu4nr.jpeg"
+                                    alt="Ibrahim Benkacem - Full Stack Developer"
+                                    class="w-full h-full object-cover rounded-full transform transition-transform duration-500 border-4 border-white/20"
+                                    id="profileImage" loading="lazy">
+                    
+                                <!-- Animated shine effect -->
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1500 ease-in-out">
+                                </div>
+                            </div>
+                    
+                            <!-- Decorative circles -->
+                            <div class="absolute -inset-4 border-2 border-primary-400/50 rounded-full animate-spin-slow">
+                            </div>
+                            <div class="absolute -inset-8 border border-primary-400/30 rounded-full animate-spin-slow">
+                            </div>
+                    
+                            <!-- Floating tech icons around the image -->
+                            <div
+                                class="absolute -top-4 -right-4 w-12 h-12 bg-primary-500/20 rounded-full backdrop-blur-sm animate-floating delay-100">
+                                <i class="fab fa-react text-2xl text-primary-400 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                                    aria-hidden="true"></i>
+                            </div>
+                            <div
+                                class="absolute -bottom-4 -left-4 w-12 h-12 bg-primary-500/20 rounded-full backdrop-blur-sm animate-floating delay-300">
+                                <i class="fab fa-js text-2xl text-primary-400 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                                    aria-hidden="true"></i>
+                            </div>
+                            <div
+                                class="absolute top-1/2 -right-8 w-10 h-10 bg-primary-500/20 rounded-full backdrop-blur-sm animate-floating delay-500">
+                                <i class="fab fa-node-js text-xl text-primary-400 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                                    aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Introduction Text -->
+                    <div class="space-y-6" data-aos="fade-left">
+                        <div class="glassmorphism p-8 rounded-xl relative overflow-hidden">
+                            <!-- Scanning line effect -->
+                            <div class="absolute w-full h-2 bg-primary-500/30 top-0 left-0 animate-scanning"
+                                aria-hidden="true"></div>
+
+                            <h2 class="text-3xl font-bold mb-6 text-primary-400">Digital Architect & Code Craftsman</h2>
+                            <p class="text-lg leading-relaxed mb-4">
+                                Greetings! I'm <span class="text-primary-400 font-semibold">Ibrahim Benkacem</span>, a
+                                passionate full-stack developer who transforms ideas into digital reality. My journey in
+                                the cyber realm began with curiosity and has evolved into a relentless pursuit of
+                                technological excellence.
+                            </p>
+                            <p class="text-lg leading-relaxed mb-4">
+                                With expertise spanning the entire development spectrum—from crafting intuitive user
+                                interfaces to architecting robust backend systems—I bring a holistic approach to web
+                                development. I specialize in creating responsive, accessible, and performance-optimized
+                                applications that deliver exceptional user experiences.
+                            </p>
+                            <p class="text-lg leading-relaxed">
+                                When I'm not immersed in code, you'll find me exploring emerging technologies,
+                                contributing to open-source projects, or enjoying a perfectly brewed coffee while
+                                conceptualizing innovative solutions to complex challenges.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Core Values Section -->
+                <section class="mb-20" data-aos="fade-up">
+                    <h2 class="text-3xl font-bold text-center mb-12 text-primary-400 glitch" data-text="CORE VALUES">
+                        CORE VALUES</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div
+                            class="glassmorphism p-6 rounded-xl text-center transform hover:scale-105 transition-all duration-300">
+                            <div
+                                class="w-16 h-16 bg-primary-500/20 rounded-full mx-auto mb-4 flex items-center justify-center">
+                                <i class="fas fa-code text-2xl text-primary-400" aria-hidden="true"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-3 text-primary-300">Clean Code</h3>
+                            <p class="text-gray-300">Writing maintainable, scalable, and efficient code that stands the
+                                test of time.</p>
+                        </div>
+                        <div
+                            class="glassmorphism p-6 rounded-xl text-center transform hover:scale-105 transition-all duration-300">
+                            <div
+                                class="w-16 h-16 bg-primary-500/20 rounded-full mx-auto mb-4 flex items-center justify-center">
+                                <i class="fas fa-users text-2xl text-primary-400" aria-hidden="true"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-3 text-primary-300">User-Centric</h3>
+                            <p class="text-gray-300">Prioritizing user experience and accessibility in every design
+                                decision.</p>
+                        </div>
+                        <div
+                            class="glassmorphism p-6 rounded-xl text-center transform hover:scale-105 transition-all duration-300">
+                            <div
+                                class="w-16 h-16 bg-primary-500/20 rounded-full mx-auto mb-4 flex items-center justify-center">
+                                <i class="fas fa-rocket text-2xl text-primary-400" aria-hidden="true"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-3 text-primary-300">Innovation</h3>
+                            <p class="text-gray-300">Constantly learning and adopting cutting-edge technologies and
+                                methodologies.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Technical Arsenal -->
+                <section class="mb-20" data-aos="fade-up">
+                    <h2 class="text-3xl font-bold text-center mb-12 text-primary-400 glitch"
+                        data-text="TECHNICAL ARSENAL">TECHNICAL ARSENAL</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div class="glassmorphism p-6 rounded-xl">
+                            <h3 class="font-semibold text-primary-400 mb-4 flex items-center">
+                                <i class="fas fa-laptop-code mr-2" aria-hidden="true"></i>
+                                Frontend
+                            </h3>
+                            <div class="space-y-2">
+                                <span
+                                    class="inline-block px-3 py-1 text-sm rounded-full bg-primary-500/20 text-primary-300">React</span>
+                                <span
+                                    class="inline-block px-3 py-1 text-sm rounded-full bg-primary-500/20 text-primary-300">Vue.js</span>
+                                <span
+                                    class="inline-block px-3 py-1 text-sm rounded-full bg-primary-500/20 text-primary-300">TypeScript</span>
+                                <span
+                                    class="inline-block px-3 py-1 text-sm rounded-full bg-primary-500/20 text-primary-300">Tailwind
+                                    CSS</span>
+                            </div>
+                        </div>
+                        <div class="glassmorphism p-6 rounded-xl">
+                            <h3 class="font-semibold text-primary-400 mb-4 flex items-center">
+                                <i class="fas fa-server mr-2" aria-hidden="true"></i>
+                                Backend
+                            </h3>
+                            <div class="space-y-2">
+                                <span
+                                    class="inline-block px-3 py-1 text-sm rounded-full bg-primary-500/20 text-primary-300">Node.js</span>
+                                <span
+                                    class="inline-block px-3 py-1 text-sm rounded-full bg-primary-500/20 text-primary-300">PHP</span>
+                                <span
+                                    class="inline-block px-3 py-1 text-sm rounded-full bg-primary-500/20 text-primary-300">Laravel</span>
+                                <span
+                                    class="inline-block px-3 py-1 text-sm rounded-full bg-primary-500/20 text-primary-300">Python</span>
+                            </div>
+                        </div>
+                        <div class="glassmorphism p-6 rounded-xl">
+                            <h3 class="font-semibold text-primary-400 mb-4 flex items-center">
+                                <i class="fas fa-database mr-2" aria-hidden="true"></i>
+                                Database
+                            </h3>
+                            <div class="space-y-2">
+                                <span
+                                    class="inline-block px-3 py-1 text-sm rounded-full bg-primary-500/20 text-primary-300">MySQL</span>
+                                <span
+                                    class="inline-block px-3 py-1 text-sm rounded-full bg-primary-500/20 text-primary-300">MongoDB</span>
+                                <span
+                                    class="inline-block px-3 py-1 text-sm rounded-full bg-primary-500/20 text-primary-300">PostgreSQL</span>
+                                <span
+                                    class="inline-block px-3 py-1 text-sm rounded-full bg-primary-500/20 text-primary-300">Redis</span>
+                            </div>
+                        </div>
+                        <div class="glassmorphism p-6 rounded-xl">
+                            <h3 class="font-semibold text-primary-400 mb-4 flex items-center">
+                                <i class="fas fa-tools mr-2" aria-hidden="true"></i>
+                                DevOps
+                            </h3>
+                            <div class="space-y-2">
+                                <span
+                                    class="inline-block px-3 py-1 text-sm rounded-full bg-primary-500/20 text-primary-300">Docker</span>
+                                <span
+                                    class="inline-block px-3 py-1 text-sm rounded-full bg-primary-500/20 text-primary-300">AWS</span>
+                                <span
+                                    class="inline-block px-3 py-1 text-sm rounded-full bg-primary-500/20 text-primary-300">Git</span>
+                                <span
+                                    class="inline-block px-3 py-1 text-sm rounded-full bg-primary-500/20 text-primary-300">CI/CD</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Professional Journey Timeline -->
+                <section class="mb-20" data-aos="fade-up">
+                    <h2 class="text-3xl font-bold text-center mb-12 text-primary-400 glitch"
+                        data-text="PROFESSIONAL JOURNEY">PROFESSIONAL JOURNEY</h2>
+                    <div class="relative">
+                        <!-- Timeline line -->
+                        <div
+                            class="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-primary-600 to-primary-400">
+                        </div>
+
+                        <div class="space-y-12">
+                            <!-- Timeline Item 1 -->
+                            <div class="relative flex items-center">
+                                <div class="flex-1 pr-8 text-right">
+                                    <div class="glassmorphism p-6 rounded-xl">
+                                        <h3 class="text-xl font-semibold text-primary-400">Senior Full Stack Developer
+                                        </h3>
+                                        <p class="text-gray-300 mb-2">Freelance & Contract Work</p>
+                                        <p class="text-sm text-gray-400 mb-3">2022 - Present</p>
+                                        <p class="text-gray-300">
+                                            Leading development of complex web applications using modern frameworks.
+                                            Specializing in performance optimization, scalable architecture, and user
+                                            experience enhancement.
+                                        </p>
+                                        <div class="flex flex-wrap gap-2 mt-3 justify-end">
+                                            <span
+                                                class="px-2 py-1 text-xs rounded-full bg-primary-500/20 text-primary-300">React</span>
+                                            <span
+                                                class="px-2 py-1 text-xs rounded-full bg-primary-500/20 text-primary-300">Node.js</span>
+                                            <span
+                                                class="px-2 py-1 text-xs rounded-full bg-primary-500/20 text-primary-300">AWS</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary-500 rounded-full border-4 border-gray-900">
+                                </div>
+                                <div class="flex-1 pl-8"></div>
+                            </div>
+
+                            <!-- Timeline Item 2 -->
+                            <div class="relative flex items-center">
+                                <div class="flex-1 pr-8"></div>
+                                <div
+                                    class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary-500 rounded-full border-4 border-gray-900">
+                                </div>
+                                <div class="flex-1 pl-8">
+                                    <div class="glassmorphism p-6 rounded-xl">
+                                        <h3 class="text-xl font-semibold text-primary-400">Frontend Developer</h3>
+                                        <p class="text-gray-300 mb-2">Various Projects & Startups</p>
+                                        <p class="text-sm text-gray-400 mb-3">2021 - 2022</p>
+                                        <p class="text-gray-300">
+                                            Focused on creating responsive, accessible web interfaces using modern
+                                            frameworks.
+                                            Collaborated with design teams to implement pixel-perfect UI/UX designs.
+                                        </p>
+                                        <div class="flex flex-wrap gap-2 mt-3">
+                                            <span
+                                                class="px-2 py-1 text-xs rounded-full bg-primary-500/20 text-primary-300">Vue.js</span>
+                                            <span
+                                                class="px-2 py-1 text-xs rounded-full bg-primary-500/20 text-primary-300">SCSS</span>
+                                            <span
+                                                class="px-2 py-1 text-xs rounded-full bg-primary-500/20 text-primary-300">Figma</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Timeline Item 3 -->
+                            <div class="relative flex items-center">
+                                <div class="flex-1 pr-8 text-right">
+                                    <div class="glassmorphism p-6 rounded-xl">
+                                        <h3 class="text-xl font-semibold text-primary-400">Web Developer</h3>
+                                        <p class="text-gray-300 mb-2">Learning & Building</p>
+                                        <p class="text-sm text-gray-400 mb-3">2020 - 2021</p>
+                                        <p class="text-gray-300">
+                                            Started my journey in web development, learning fundamental technologies and
+                                            building personal projects to master the craft of creating digital
+                                            experiences.
+                                        </p>
+                                        <div class="flex flex-wrap gap-2 mt-3 justify-end">
+                                            <span
+                                                class="px-2 py-1 text-xs rounded-full bg-primary-500/20 text-primary-300">HTML/CSS</span>
+                                            <span
+                                                class="px-2 py-1 text-xs rounded-full bg-primary-500/20 text-primary-300">JavaScript</span>
+                                            <span
+                                                class="px-2 py-1 text-xs rounded-full bg-primary-500/20 text-primary-300">PHP</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary-500 rounded-full border-4 border-gray-900">
+                                </div>
+                                <div class="flex-1 pl-8"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Achievements & Stats -->
+                <section class="mb-20" data-aos="fade-up">
+                    <h2 class="text-3xl font-bold text-center mb-12 text-primary-400 glitch" data-text="ACHIEVEMENTS">
+                        ACHIEVEMENTS</h2>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                        <div
+                            class="glassmorphism p-6 rounded-xl text-center transform hover:scale-105 transition-all duration-300">
+                            <div class="text-3xl font-bold text-primary-400 mb-2 counter" data-target="50">0</div>
+                            <div class="text-sm text-gray-400">Projects Completed</div>
+                        </div>
+                        <div
+                            class="glassmorphism p-6 rounded-xl text-center transform hover:scale-105 transition-all duration-300">
+                            <div class="text-3xl font-bold text-purple-400 mb-2 counter" data-target="3">0</div>
+                            <div class="text-sm text-gray-400">Years Experience</div>
+                        </div>
+                        <div
+                            class="glassmorphism p-6 rounded-xl text-center transform hover:scale-105 transition-all duration-300">
+                            <div class="text-3xl font-bold text-green-400 mb-2 counter" data-target="98">0</div>
+                            <div class="text-sm text-gray-400">Client Satisfaction</div>
+                        </div>
+                        <div
+                            class="glassmorphism p-6 rounded-xl text-center transform hover:scale-105 transition-all duration-300">
+                            <div class="text-3xl font-bold text-pink-400 mb-2 counter" data-target="25">0</div>
+                            <div class="text-sm text-gray-400">Technologies Mastered</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Philosophy Section -->
+                <section class="mb-20" data-aos="fade-up">
+                    <div class="glassmorphism p-8 rounded-xl relative overflow-hidden">
+                        <!-- Animated border effect -->
+                        <div class="absolute inset-0 border-2 border-primary-500 rounded-xl animate-pulse"
+                            aria-hidden="true"></div>
+
+                        <h2 class="text-3xl font-bold text-center mb-8 text-primary-400">Development Philosophy</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div>
+                                <h3 class="text-xl font-semibold mb-4 text-primary-300">Code as Art</h3>
+                                <p class="text-gray-300 mb-4">
+                                    I believe that code is not just functional instructions for machines, but a form of
+                                    digital art.
+                                    Every line should be crafted with intention, elegance, and purpose.
+                                </p>
+                                <h3 class="text-xl font-semibold mb-4 text-primary-300">User-First Approach</h3>
+                                <p class="text-gray-300">
+                                    Technology should serve humanity, not the other way around. Every feature I build is
+                                    designed with the end user's needs, accessibility, and experience at the forefront.
+                                </p>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-4 text-primary-300">Continuous Evolution</h3>
+                                <p class="text-gray-300 mb-4">
+                                    The tech landscape evolves rapidly, and so must we. I'm committed to lifelong
+                                    learning,
+                                    constantly updating my skills and embracing new paradigms and technologies.
+                                </p>
+                                <h3 class="text-xl font-semibold mb-4 text-primary-300">Quality Over Quantity</h3>
+                                <p class="text-gray-300">
+                                    I prioritize building robust, maintainable solutions over quick fixes. Every project
+                                    is an opportunity to create something that will stand the test of time.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Call to Action -->
+                <section class="text-center" data-aos="fade-up">
+                    <div class="glassmorphism p-8 rounded-xl">
+                        <h2 class="text-3xl font-bold mb-6 text-primary-400">Ready to Build Something Amazing?</h2>
+                        <p class="text-lg text-gray-300 mb-8">
+                            Let's collaborate and bring your digital vision to life with cutting-edge technology and
+                            innovative solutions.
+                        </p>
+                        <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                            <a href="contact.html"
+                                class="bg-primary-600 text-white px-8 py-3 rounded-full hover:bg-primary-700 transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:ring-offset-gray-900">
+                                <i class="fas fa-rocket mr-2" aria-hidden="true"></i>
+                                Start a Project
+                            </a>
+                            <a href="projects.html"
+                                class="bg-gray-800 text-white px-8 py-3 rounded-full hover:bg-gray-700 transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 focus:ring-offset-gray-900">
+                                <i class="fas fa-eye mr-2" aria-hidden="true"></i>
+                                View My Work
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-12 relative overflow-hidden" role="contentinfo">
+        <div class="container mx-auto px-8 max-w-7xl relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center md:text-left">
+                    <h3 class="text-2xl font-bold mb-4 text-primary-400 glitch" data-text="IB.dev">IB.dev</h3>
+                    <p class="text-gray-400">&copy; 2024 Ibrahim Benkacem. All rights reserved.</p>
+                </div>
+                <div class="text-center">
+                    <h4 class="text-xl font-semibold mb-4 text-primary-300">Quick Links</h4>
+                    <nav aria-label="Footer navigation">
+                        <ul class="space-y-2">
+                            <li><a href="index.html"
+                                    class="text-gray-400 hover:text-primary-400 transition-colors duration-300 focus:outline-none focus:text-primary-400">Home</a>
+                            </li>
+                            <li><a href="about.html"
+                                    class="text-gray-400 hover:text-primary-400 transition-colors duration-300 focus:outline-none focus:text-primary-400">About</a>
+                            </li>
+                            <li><a href="projects.html"
+                                    class="text-gray-400 hover:text-primary-400 transition-colors duration-300 focus:outline-none focus:text-primary-400">Projects</a>
+                            </li>
+                            <li><a href="skills.html"
+                                    class="text-gray-400 hover:text-primary-400 transition-colors duration-300 focus:outline-none focus:text-primary-400">Skills</a>
+                            </li>
+                            <li><a href="contact.html"
+                                    class="text-gray-400 hover:text-primary-400 transition-colors duration-300 focus:outline-none focus:text-primary-400">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="text-center md:text-right">
+                    <h4 class="text-xl font-semibold mb-4 text-primary-300">Connect</h4>
+                    <div class="flex justify-center md:justify-end space-x-4">
+                        <a href="https://twitter.com/ibrahimbenkacem"
+                            class="text-gray-400 hover:text-primary-400 transition-colors duration-300 transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-primary-500 rounded p-1"
+                            aria-label="Twitter">
+                            <i class="fab fa-twitter text-2xl"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/ibrahimbenkacem"
+                            class="text-gray-400 hover:text-primary-400 transition-colors duration-300 transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-primary-500 rounded p-1"
+                            aria-label="LinkedIn">
+                            <i class="fab fa-linkedin text-2xl"></i>
+                        </a>
+                        <a href="https://github.com/ibrahimbenkacem"
+                            class="text-gray-400 hover:text-primary-400 transition-colors duration-300 transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-primary-500 rounded p-1"
+                            aria-label="GitHub">
+                            <i class="fab fa-github text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Loading Screen -->
+    <div id="loading-container" class="fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-75 z-50">
+        <div class="holographic-loader" aria-label="Loading"></div>
+    </div>
+
+    <!-- HUD Container -->
+    <div id="hud-container" class="fixed top-0 left-0 w-full h-full pointer-events-none md:block" aria-hidden="true">
+        <div id="fps-counter"
+            class="absolute top-4 left-4 bg-black bg-opacity-50 text-white p-2 rounded hidden md:block">
+            FPS: <span id="fps-value">60</span>
+        </div>
+        <div id="time-display"
+            class="absolute top-4 right-4 bg-black bg-opacity-50 text-white p-2 rounded hidden md:block">
+            Time: <span id="time-value">00:00:00</span>
+        </div>
+    </div>
+
+    <!-- Scripts - Load in correct order -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.21/vanta.net.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <!-- Custom Scripts -->
+    <script src="js/performance.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
