@@ -101,8 +101,8 @@ Before you begin, ensure you have the following installed:
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/ibrahimbenkacem/portfolio.git
-cd portfolio
+git clone https://github.com/BenkacemIbrahim/ibrahim-portfolio.git
+cd ibrahim-portfolio
 ```
 
 2. **Install dependencies** (if using build tools)
